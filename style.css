@@ -54,7 +54,7 @@
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url("gambar-desa.jpg"); /* Ganti sesuai nama file gambarmu */
+    background-image: url("WhatsApp Image 2025-10-05 at 19.24.54.jpeg"); /* Ganti sesuai nama file gambarmu */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -106,3 +106,4 @@ footer {
     font-size: 14px;
     color: #555;
 }
+

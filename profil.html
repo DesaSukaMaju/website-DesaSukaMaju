@@ -4,86 +4,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Desa Suka Maju</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <h1>Desa Suka Maju</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="profil.html" class="active">Profil Desa</a></li>
-        <li><a href="#">Data Desa</a></li>
-        <li><a href="#">Pemerintahan</a></li>
-        <li><a href="#">Potensi</a></li>
-        <li><a href="#">Kontak</a></li>
-      </ul>
-    </nav>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #2e8b57;
+      border-left: 6px solid #1e6d43;
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #1e6d43;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ol {
+      margin-left: 20px;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px 12px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #eaf7ec;
+      text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Responsive di HP */
+    @media screen and (max-width: 768px) {
+      main {
+        padding: 10px;
+      }
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      th {
+        display: none;
+      }
+      td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding: 8px 0;
+      }
+      td::before {
+        font-weight: bold;
+        display: block;
+        color: #2e8b57;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Profil Desa Suka Maju</h1>
   </header>
 
-  <!-- Isi Profil Desa -->
-  <section class="content-section">
-    <h2>Visi dan Misi Desa</h2>
-    <p><strong>Visi:</strong> Mewujudkan Desa Suka Maju yang Mandiri, Sejahtera, dan Berbudaya.</p>
-    <p><strong>Misi:</strong></p>
-    <ul>
-      <li>Meningkatkan kesejahteraan masyarakat melalui pembangunan ekonomi desa.</li>
-      <li>Meningkatkan kualitas pelayanan publik yang transparan dan akuntabel.</li>
-      <li>Melestarikan nilai budaya dan kearifan lokal masyarakat desa.</li>
-      <li>Mendorong partisipasi aktif masyarakat dalam pembangunan desa.</li>
-    </ul>
-  </section>
+  <main>
 
-  <section class="content-section">
-    <h2>Sejarah Desa</h2>
-    <p>
-      Desa Suka Maju berdiri sejak tahun 1985 sebagai hasil pemekaran dari desa tetangga. 
-      Sejak awal berdirinya, masyarakat Desa Suka Maju hidup dalam suasana gotong royong dan 
-      menjunjung tinggi nilai kekeluargaan. Nama “Suka Maju” mencerminkan semangat warga desa 
-      untuk terus berkembang dalam segala bidang kehidupan.
-    </p>
-  </section>
+    <!-- Bagian Visi & Misi -->
+    <section id="visi-misi">
+      <h2>Visi dan Misi Desa</h2>
 
-  <section class="content-section">
-    <h2>Data Singkat Desa</h2>
-    <table class="data-table">
-      <tr><th>Nama Desa</th><td>Desa Suka Maju</td></tr>
-      <tr><th>Kecamatan</th><td>Wolowa</td></tr>
-      <tr><th>Kabupaten</th><td>Buton</td></tr>
-      <tr><th>Provinsi</th><td>Sulawesi Tenggara</td></tr>
-      <tr><th>Luas Wilayah</th><td>1.250 Ha</td></tr>
-      <tr><th>Jumlah Penduduk</th><td>2.540 Jiwa</td></tr>
-      <tr><th>Jumlah Kepala Keluarga</th><td>630 KK</td></tr>
-    </table>
-  </section>
+      <h3>Visi</h3>
+      <p><strong>"Mewujudkan masyarakat Suka Maju yang mandiri, sehat, berbudaya, sejahtera, adil, dan beradab."</strong></p>
 
-  <section class="content-section">
-    <h2>Kondisi Geografis Desa</h2>
-    <p>
-      Secara geografis, Desa Suka Maju terletak di wilayah dataran rendah dengan ketinggian sekitar 250 meter di atas permukaan laut. 
-      Sebagian besar wilayah desa dimanfaatkan untuk lahan pertanian dan perkebunan. 
-      Iklim di desa ini tergolong tropis dengan dua musim, yaitu musim hujan dan musim kemarau.
-    </p>
-  </section>
+      <h3>Misi</h3>
+      <ol>
+        <li>Meningkatkan ketersediaan infrastruktur desa dan pelayanan masyarakat.</li>
+        <li>Menciptakan tata kelola pemerintahan yang bersih dan transparan.</li>
+        <li>Meningkatkan kualitas sumber daya manusia.</li>
+        <li>Meningkatkan pemenuhan kebutuhan masyarakat baik materiil maupun spiritual.</li>
+      </ol>
+    </section>
 
-  <section class="content-section">
-    <h2>Peta Desa</h2>
-    <p>Berikut adalah letak geografis Desa Suka Maju:</p>
-    <div class="map-container">
-      <!-- Kamu bisa ganti link iframe di bawah dengan lokasi desa kamu -->
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7975107.730847355!2d113.92132752330666!3d-2.5489261429384365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbd2e4f9f6b0a6b%3A0x3039d80b220cf50!2sSulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1696550000000!5m2!1sid!2sid" 
-        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-    </div>
-  </section>
+    <!-- Bagian Arah Kebijakan & Strategi -->
+    <section id="strategi-pembangunan">
+      <h2>Arah Kebijakan dan Strategi Pembangunan Desa</h2>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Desa Suka Maju | Kecamatan Wolowa | Kabupaten Buton | Provinsi Sulawesi Tenggara</p>
-  </footer>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Arah Kebijakan Pembangunan Desa</th>
+            <th>Strategi Pencapaian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Peningkatan sarana dan prasarana infrastruktur desa</td>
+            <td>
+              a. Membangun sarana umum, pendidikan, kesehatan, kegiatan ekonomi & sosial budaya.<br>
+              b. Meningkatkan sumber pendapatan keuangan desa & partisipasi masyarakat.
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Pemberdayaan masyarakat dalam perencanaan, pelaksanaan, pengawasan & pemeliharaan infrastruktur desa</td>
+            <td>
+              a. Melibatkan partisipasi masyarakat dalam penyusunan perencanaan pembangunan.<br>
+              b. Mendorong peningkatan kualitas perencanaan, monitoring & evaluasi pembangunan serta sinergi dengan perencanaan daerah.<br>
+              c. Melakukan pendataan hasil pembangunan desa.
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Peningkatan kualitas pelayanan pemerintahan</td>
+            <td>
+              a. Menyediakan sarana kegiatan pemerintahan desa & organisasi kemasyarakatan.<br>
+              b. Meningkatkan akuntabilitas dan profesionalisme aparatur desa.
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Pengembangan kegiatan ekonomi produktif masyarakat</td>
+            <td>
+              a. Menyediakan regulasi & aturan yang mendorong kegiatan ekonomi produktif.<br>
+              b. Membangun kerjasama dengan pihak swasta & pemerintah.<br>
+              c. Mengembangkan kelembagaan perekonomian desa.
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Peningkatan kualitas moral & spiritual masyarakat</td>
+            <td>
+              a. Meningkatkan kegiatan keagamaan & sosial kemasyarakatan.<br>
+              b. Mengembangkan minat & bakat masyarakat dalam bidang olahraga & kesenian.<br>
+              c. Menyediakan sarana dan prasarana kegiatan sosial, olahraga, dan budaya.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
+  </main>
 </body>
 </html>

@@ -5,24 +5,34 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Desa Suka Maju</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <img src="images/logo.png" alt="Logo Desa" class="logo" />
+        <!-- opsi: ganti logo.png kalau ada -->
+        <img src="images/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'"/>
         <div>
           <h1>Desa Suka Maju</h1>
           <p class="subtitle">Kecamatan • Kabupaten • Provinsi</p>
         </div>
       </div>
 
-      <!-- 🔹 Navigasi tanpa menu "Berita" -->
       <nav class="main-nav">
         <a href="index.html" class="active">Beranda</a>
-        <a href="profil.html">Profil Desa</a>
+
+        <div class="dropdown">
+          <a href="#" class="dropbtn">Profil Desa ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="profil.html#visi">Visi & Misi</a></li>
+            <li><a href="profil.html#sejarah">Sejarah</a></li>
+            <li><a href="profil.html#potensi">Potensi Desa</a></li>
+          </ul>
+        </div>
+
+        <a href="data.html">Data Desa</a>
         <a href="pemerintahan.html">Pemerintahan</a>
-        <a href="data.html">Data & Statistik</a>
         <a href="potensi.html">Potensi</a>
         <a href="galeri.html">Galeri</a>
         <a href="kontak.html">Kontak</a>
@@ -31,13 +41,12 @@
   </header>
 
   <main>
-    <!-- 🔹 Hero -->
     <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <h2>Selamat Datang di Website Resmi<br/>Desa Suka Maju</h2>
-        <p>Informasi resmi, data, dan potensi seputar Desa Suka Maju.</p>
+      <img src="images/hero.jpg" alt="Desa Suka Maju - Hero Image">
+      <div class="hero-text">
+        <h2>Selamat Datang di Website Resmi</h2>
+        <h1>Desa Suka Maju</h1>
+        <p>Sumber informasi resmi tentang pemerintahan, data, dan potensi Desa Suka Maju.</p>
         <div class="hero-cta">
           <a class="btn" href="profil.html">Profil Desa</a>
           <a class="btn outline" href="potensi.html">Potensi Desa</a>
@@ -45,19 +54,23 @@
       </div>
     </section>
 
-    <!-- 🔹 Ringkasan singkat -->
-    <section class="features container">
+    <section class="container features">
       <article>
         <h3>Visi & Misi</h3>
-        <p>Visi: Mewujudkan desa sejahtera... <a href="profil.html">Selengkapnya</a></p>
+        <p>Visi: Mewujudkan Desa Suka Maju yang mandiri, berdaya saing, dan sejahtera.</p>
+        <p><a href="profil.html#visi">Selengkapnya →</a></p>
       </article>
+
       <article>
         <h3>Data & Statistik</h3>
-        <p>Jumlah penduduk, mata pencaharian, dan info umum. <a href="data.html">Lihat grafik</a></p>
+        <p>Menampilkan jumlah penduduk, mata pencaharian mayoritas pertanian, dan grafik demografi.</p>
+        <p><a href="data.html">Lihat Grafik →</a></p>
       </article>
+
       <article>
-        <h3>Potensi Desa</h3>
-        <p>Produk unggulan & wisata desa. <a href="potensi.html">Jelajahi</a></p>
+        <h3>Produk & Pariwisata</h3>
+        <p>Produk unggulan lokal dan destinasi wisata desa.</p>
+        <p><a href="potensi.html">Jelajahi →</a></p>
       </article>
     </section>
   </main>
@@ -67,7 +80,5 @@
       <p>© 2025 Desa Suka Maju — Semua hak dilindungi.</p>
     </div>
   </footer>
-
-  <script src="js/script.js"></script>
 </body>
 </html>

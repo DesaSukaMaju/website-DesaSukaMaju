@@ -1,84 +1,46 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Desa Suka Maju</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Suka Maju</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <!-- opsi: ganti logo.png kalau ada -->
-        <img src="images/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'"/>
-        <div>
-          <h1>Desa Suka Maju</h1>
-          <p class="subtitle">Kecamatan • Kabupaten • Provinsi</p>
+
+    <!-- Navigasi -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo Desa" class="logo-img">
+            <h1>Desa Suka Maju</h1>
         </div>
-      </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="profil.html">Profil Desa</a></li>
+                <li><a href="pemerintahan.html">Pemerintahan</a></li>
+                <li><a href="potensi.html">Potensi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <nav class="main-nav">
-        <a href="index.html" class="active">Beranda</a>
-
-        <div class="dropdown">
-          <a href="#" class="dropbtn">Profil Desa ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="profil.html#visi">Visi & Misi</a></li>
-            <li><a href="profil.html#sejarah">Sejarah</a></li>
-            <li><a href="profil.html#potensi">Potensi Desa</a></li>
-          </ul>
-        </div>
-
-        <a href="data.html">Data Desa</a>
-        <a href="pemerintahan.html">Pemerintahan</a>
-        <a href="potensi.html">Potensi</a>
-        <a href="galeri.html">Galeri</a>
-        <a href="kontak.html">Kontak</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
+    <!-- Hero Section -->
     <section class="hero">
-      <img src="images/hero.jpg" alt="Desa Suka Maju - Hero Image">
-      <div class="hero-text">
-        <h2>Selamat Datang di Website Resmi</h2>
-        <h1>Desa Suka Maju</h1>
-        <p>Sumber informasi resmi tentang pemerintahan, data, dan potensi Desa Suka Maju.</p>
-        <div class="hero-cta">
-          <a class="btn" href="profil.html">Profil Desa</a>
-          <a class="btn outline" href="potensi.html">Potensi Desa</a>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Selamat Datang di Website</h2>
+            <h1>Desa Suka Maju</h1>
+            <p>Sumber informasi resmi tentang pemerintahan, data, dan potensi Desa Suka Maju.</p>
+            <a href="profil.html" class="btn">Lihat Profil Desa</a>
         </div>
-      </div>
     </section>
 
-    <section class="container features">
-      <article>
-        <h3>Visi & Misi</h3>
-        <p>Visi: Mewujudkan Desa Suka Maju yang mandiri, berdaya saing, dan sejahtera.</p>
-        <p><a href="profil.html#visi">Selengkapnya →</a></p>
-      </article>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Desa Suka Maju | Kecamatan Wolowa | Kabupaten Buton | Provinsi Sulawesi Tenggara</p>
+    </footer>
 
-      <article>
-        <h3>Data & Statistik</h3>
-        <p>Menampilkan jumlah penduduk, mata pencaharian mayoritas pertanian, dan grafik demografi.</p>
-        <p><a href="data.html">Lihat Grafik →</a></p>
-      </article>
-
-      <article>
-        <h3>Produk & Pariwisata</h3>
-        <p>Produk unggulan lokal dan destinasi wisata desa.</p>
-        <p><a href="potensi.html">Jelajahi →</a></p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Desa Suka Maju — Semua hak dilindungi.</p>
-    </div>
-  </footer>
 </body>
 </html>

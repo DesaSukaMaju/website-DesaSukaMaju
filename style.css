@@ -58,7 +58,7 @@
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: url("OIP.jpeg"); /* ganti nama file ini sesuai gambarmu */
+    background-image: url("a1cb9126af75e274a565a9a606fb6131.jpg"); /* ganti nama file ini sesuai gambarmu */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -123,3 +123,4 @@ footer {
     font-size: 14px;
     border-top: 1px solid #eee;
 }
+

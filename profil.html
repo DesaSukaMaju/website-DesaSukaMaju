@@ -1,83 +1,155 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Desa — Desa Suka Maju</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Tambahan kecil khusus halaman profil */
+    .content {
+      max-width: 900px;
+      margin: 120px auto 60px;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      line-height: 1.8;
+    }
+
+    .content h2 {
+      color: #2a8bfc;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .content h3 {
+      margin-top: 25px;
+      color: #333;
+    }
+
+    .data-singkat {
+      margin-top: 15px;
+      padding-left: 15px;
+    }
+
+    .data-singkat p {
+      margin: 6px 0;
+    }
+
+    .data-singkat strong {
+      display: inline-block;
+      width: 200px;
+    }
+
+    /* Dropdown Navbar */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      overflow: hidden;
+      min-width: 180px;
+      z-index: 999;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: #333;
+      transition: background 0.2s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+      color: #2a8bfc;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .navbar ul li {
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="images/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'"/>
-        <div>
-          <h1>Desa Suka Maju</h1>
-          <p class="subtitle">Profil Desa</p>
-        </div>
-      </div>
 
-      <nav class="main-nav">
-        <a href="index.html">Beranda</a>
-        <div class="dropdown">
-          <a href="#" class="dropbtn active">Profil Desa ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="#visi">Visi & Misi</a></li>
-            <li><a href="#sejarah">Sejarah Desa</a></li>
-            <li><a href="#potensi">Potensi Desa</a></li>
-          </ul>
-        </div>
-        <a href="data.html">Data Desa</a>
-        <a href="pemerintahan.html">Pemerintahan</a>
-        <a href="potensi.html">Potensi</a>
-        <a href="galeri.html">Galeri</a>
-        <a href="kontak.html">Kontak</a>
-      </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo-desa.png" alt="Logo Desa" class="logo-img">
+      <h1>Desa Suka Maju</h1>
     </div>
-  </header>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      
+      <li class="dropdown">
+        <a href="profil.html" class="active">Profil Desa ▾</a>
+        <div class="dropdown-content">
+          <a href="visi.html">Visi & Misi</a>
+          <a href="sejarah.html">Sejarah Desa</a>
+          <a href="potensi.html">Potensi Desa</a>
+        </div>
+      </li>
 
-  <main class="container page">
-    <h2 id="judul">Profil Desa Suka Maju</h2>
+      <li><a href="pemerintahan.html">Pemerintahan</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
 
-    <section id="sejarah">
-      <h3>Sejarah Desa</h3>
-      <p>Desa Suka Maju berdiri pada tahun [TAHUN_PENDIRIAN]. Awal mula berdiri bermula dari ... (tuliskan kronologi singkat: tokoh pendiri, perkembangan, dll).</p>
-    </section>
+  <!-- Konten Profil -->
+  <section class="content">
+    <h2>Profil Desa Suka Maju</h2>
 
-    <section id="visi">
-      <h3>Visi</h3>
-      <p>Menjadi desa yang mandiri, berdaya saing, dan sejahtera.</p>
+    <h3>Sejarah Desa</h3>
+    <p>
+      Desa Suka Maju berdiri pada tahun <strong>[TAHUN_PENDIRIAN]</strong>. 
+      Awal mula berdiri bermula dari ... (tuliskan kronologi singkat: tokoh pendiri, perkembangan, dan pembentukan pemerintahan desa).
+    </p>
 
-      <h3>Misi</h3>
-      <ul>
-        <li>Meningkatkan kesejahteraan masyarakat melalui penguatan pertanian.</li>
-        <li>Mengembangkan UMKM lokal dan produk unggulan desa.</li>
-        <li>Meningkatkan pelayanan pemerintahan desa yang transparan dan partisipatif.</li>
-      </ul>
-    </section>
+    <h3>Visi</h3>
+    <p><em>Menjadi desa yang mandiri, berdaya saing, dan sejahtera.</em></p>
 
-    <section id="data-singkat">
-      <h3>Data Singkat</h3>
-      <table class="info-table">
-        <tr><th>Kode Pos</th><td>93761</td></tr>
-        <tr><th>Luas Wilayah</th><td>2.150 Ha</td></tr>
-        <tr><th>Nama Dusun</th><td>Dusun A, Dusun B, Dusun C, Dusun D</td></tr>
-        <tr><th>Jumlah RT</th><td>12</td></tr>
-        <tr><th>Pendiri Desa</th><td>Toko La Ode Dama</td></tr>
-        <tr><th>Mata Pencaharian</th><td>Pertanian (Mayoritas)</td></tr>
-        <tr><th>Jumlah Penduduk</th><td>2.540 Jiwa</td></tr>
-      </table>
-    </section>
+    <h3>Misi</h3>
+    <ul>
+      <li>Meningkatkan kesejahteraan masyarakat melalui penguatan pertanian.</li>
+      <li>Mengembangkan UMKM lokal dan produk unggulan desa.</li>
+      <li>Meningkatkan pelayanan pemerintahan desa yang transparan dan partisipatif.</li>
+    </ul>
 
-    <section id="kondisi">
-      <h3>Kondisi Geografis</h3>
-      <p>Desa Suka Maju terletak di dataran ... (sebutkan ketinggian bila ada), berbatasan dengan ..., memiliki sungai/pegunungan/areal persawahan utama, dsb.</p>
-    </section>
-  </main>
+    <h3>Data Singkat</h3>
+    <div class="data-singkat">
+      <p><strong>Kode Pos:</strong> 93761</p>
+      <p><strong>Luas Wilayah:</strong> 2.150 Ha</p>
+      <p><strong>Nama Dusun:</strong> Dusun A, Dusun B, Dusun C, Dusun D</p>
+      <p><strong>Jumlah RT:</strong> 12</p>
+      <p><strong>Pendiri Desa:</strong> Toko La Ode Dama</p>
+      <p><strong>Mata Pencaharian:</strong> Pertanian (Mayoritas)</p>
+      <p><strong>Jumlah Penduduk:</strong> 2.540 Jiwa</p>
+    </div>
 
-  <footer class="site-footer">
-    <div class="container"><p>© 2025 Desa Suka Maju</p></div>
+    <h3>Kondisi Geografis</h3>
+    <p>
+      Desa Suka Maju terletak di dataran ... (sebutkan ketinggian bila ada), 
+      berbatasan dengan ..., dan memiliki sungai/pegunungan/areal persawahan utama, dsb.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Desa Suka Maju
   </footer>
+
 </body>
 </html>

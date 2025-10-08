@@ -81,16 +81,22 @@
     padding: 20px;
 }
 
+.hero-content h1, 
+.hero-content h2, 
+.hero-content p {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
 .hero-content h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .hero-content h1 {
-    font-size: 58px;
-    font-weight: 800;
-    margin-bottom: 20px;
+    font-size: 40px;      /* sebelumnya 58px, dikurangi biar proporsional */
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
@@ -106,4 +112,5 @@ footer {
     font-size: 14px;
     color: #555;
 }
+
 

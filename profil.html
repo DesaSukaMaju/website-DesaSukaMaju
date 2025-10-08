@@ -1,191 +1,206 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Desa Suka Maju</title>
+<!-- ===== PROFIL DESA LENGKAP ===== -->
 
+<section id="profil-desa">
   <style>
-    body {
+    #profil-desa {
       font-family: "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9fafb;
       color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #2e8b57;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    main {
-      max-width: 1000px;
+      line-height: 1.7;
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
-    h2 {
+    #profil-desa section {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 35px;
+    }
+
+    #profil-desa h2 {
       color: #2e8b57;
       border-left: 6px solid #1e6d43;
       padding-left: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
-    h3 {
+    #profil-desa h3 {
       color: #1e6d43;
-      margin-top: 30px;
+      margin-top: 25px;
       margin-bottom: 10px;
     }
 
-    p {
+    #profil-desa p {
       margin-bottom: 10px;
+      text-align: justify;
     }
 
-    ol {
-      margin-left: 20px;
+    #profil-desa ol {
+      margin-left: 25px;
+      margin-top: 10px;
     }
 
-    section {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-
-    table {
+    /* Gaya tabel data singkat */
+    #profil-desa table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 15px;
     }
 
-    th, td {
+    #profil-desa th, 
+    #profil-desa td {
       border: 1px solid #ccc;
       padding: 10px 12px;
-      vertical-align: top;
-    }
-
-    th {
-      background-color: #eaf7ec;
       text-align: left;
     }
 
-    tbody tr:nth-child(even) {
+    #profil-desa th {
+      background-color: #eaf7ec;
+      width: 35%;
+      color: #1e6d43;
+    }
+
+    #profil-desa tr:nth-child(even) {
       background-color: #f9f9f9;
     }
 
-    /* Responsive di HP */
+    /* Gaya untuk iframe peta */
+    #profil-desa iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
     @media screen and (max-width: 768px) {
-      main {
+      #profil-desa {
         padding: 10px;
+        margin: 20px;
       }
-      table, thead, tbody, th, td, tr {
+
+      #profil-desa section {
+        padding: 18px;
+      }
+
+      #profil-desa table, 
+      #profil-desa tr, 
+      #profil-desa th, 
+      #profil-desa td {
         display: block;
+        width: 100%;
       }
-      th {
-        display: none;
+
+      #profil-desa tr {
+        margin-bottom: 10px;
       }
-      td {
+
+      #profil-desa th {
+        background-color: transparent;
+        color: #2e8b57;
+        font-weight: bold;
+        border: none;
+      }
+
+      #profil-desa td {
         border: none;
         border-bottom: 1px solid #ddd;
-        padding: 8px 0;
+        padding-left: 5px;
       }
-      td::before {
-        font-weight: bold;
-        display: block;
-        color: #2e8b57;
+
+      #profil-desa iframe {
+        height: 300px;
       }
     }
   </style>
-</head>
 
-<body>
-  <header>
-    <h1>Profil Desa Suka Maju</h1>
-  </header>
+  <!-- Visi & Misi -->
+  <section id="visi-misi">
+    <h2>Visi dan Misi Desa</h2>
+    <h3>Visi</h3>
+    <p><strong>"Mewujudkan masyarakat Suka Maju yang mandiri, sehat, berbudaya, sejahtera, adil, dan beradab."</strong></p>
 
-  <main>
+    <h3>Misi</h3>
+    <ol>
+      <li>Meningkatkan ketersediaan infrastruktur desa dan pelayanan masyarakat.</li>
+      <li>Menciptakan tata kelola pemerintahan yang bersih dan transparan.</li>
+      <li>Meningkatkan kualitas sumber daya manusia.</li>
+      <li>Meningkatkan pemenuhan kebutuhan masyarakat baik materiil maupun spiritual.</li>
+    </ol>
+  </section>
 
-    <!-- Bagian Visi & Misi -->
-    <section id="visi-misi">
-      <h2>Visi dan Misi Desa</h2>
+  <!-- Sejarah Desa -->
+  <section id="sejarah">
+    <h2>Sejarah Singkat Desa</h2>
+    <p>
+      Desa Suka Maju berdiri sejak tahun 1985 sebagai hasil pemekaran dari desa tetangga. 
+      Sejak awal berdirinya, masyarakat Desa Suka Maju hidup dalam suasana gotong royong 
+      dan menjunjung tinggi nilai kekeluargaan. Nama “Suka Maju” mencerminkan semangat warga 
+      desa untuk terus berkembang dalam segala bidang kehidupan.
+    </p>
+  </section>
 
-      <h3>Visi</h3>
-      <p><strong>"Mewujudkan masyarakat Suka Maju yang mandiri, sehat, berbudaya, sejahtera, adil, dan beradab."</strong></p>
+  <!-- Kondisi Geografis -->
+  <section id="geografis">
+    <h2>Kondisi Geografis Desa</h2>
+    <p>
+      Secara geografis, Desa Suka Maju terletak di wilayah dataran rendah dengan ketinggian 
+      sekitar 250 meter di atas permukaan laut. Sebagian besar wilayah desa dimanfaatkan 
+      untuk lahan pertanian dan perkebunan. 
+    </p>
+    <p>
+      Iklim di desa ini tergolong tropis dengan dua musim, yaitu musim hujan dan musim kemarau. 
+      Curah hujan yang cukup tinggi mendukung aktivitas pertanian masyarakat. 
+      Suhu udara rata-rata berkisar antara 23–32°C sepanjang tahun.
+    </p>
+  </section>
 
-      <h3>Misi</h3>
-      <ol>
-        <li>Meningkatkan ketersediaan infrastruktur desa dan pelayanan masyarakat.</li>
-        <li>Menciptakan tata kelola pemerintahan yang bersih dan transparan.</li>
-        <li>Meningkatkan kualitas sumber daya manusia.</li>
-        <li>Meningkatkan pemenuhan kebutuhan masyarakat baik materiil maupun spiritual.</li>
-      </ol>
-    </section>
+  <!-- Data Singkat Desa -->
+  <section id="data-singkat">
+    <h2>Data Singkat Desa</h2>
+    <table>
+      <tr>
+        <th>Nama Desa</th>
+        <td>Desa Suka Maju</td>
+      </tr>
+      <tr>
+        <th>Kecamatan</th>
+        <td>Wolowa</td>
+      </tr>
+      <tr>
+        <th>Kabupaten</th>
+        <td>Buton</td>
+      </tr>
+      <tr>
+        <th>Provinsi</th>
+        <td>Sulawesi Tenggara</td>
+      </tr>
+      <tr>
+        <th>Luas Wilayah</th>
+        <td>1.250 Ha</td>
+      </tr>
+      <tr>
+        <th>Jumlah Penduduk</th>
+        <td>2.540 Jiwa</td>
+      </tr>
+      <tr>
+        <th>Jumlah Kepala Keluarga</th>
+        <td>630 KK</td>
+      </tr>
+    </table>
+  </section>
 
-    <!-- Bagian Arah Kebijakan & Strategi -->
-    <section id="strategi-pembangunan">
-      <h2>Arah Kebijakan dan Strategi Pembangunan Desa</h2>
-
-      <table>
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Arah Kebijakan Pembangunan Desa</th>
-            <th>Strategi Pencapaian</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Peningkatan sarana dan prasarana infrastruktur desa</td>
-            <td>
-              a. Membangun sarana umum, pendidikan, kesehatan, kegiatan ekonomi & sosial budaya.<br>
-              b. Meningkatkan sumber pendapatan keuangan desa & partisipasi masyarakat.
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Pemberdayaan masyarakat dalam perencanaan, pelaksanaan, pengawasan & pemeliharaan infrastruktur desa</td>
-            <td>
-              a. Melibatkan partisipasi masyarakat dalam penyusunan perencanaan pembangunan.<br>
-              b. Mendorong peningkatan kualitas perencanaan, monitoring & evaluasi pembangunan serta sinergi dengan perencanaan daerah.<br>
-              c. Melakukan pendataan hasil pembangunan desa.
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Peningkatan kualitas pelayanan pemerintahan</td>
-            <td>
-              a. Menyediakan sarana kegiatan pemerintahan desa & organisasi kemasyarakatan.<br>
-              b. Meningkatkan akuntabilitas dan profesionalisme aparatur desa.
-            </td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Pengembangan kegiatan ekonomi produktif masyarakat</td>
-            <td>
-              a. Menyediakan regulasi & aturan yang mendorong kegiatan ekonomi produktif.<br>
-              b. Membangun kerjasama dengan pihak swasta & pemerintah.<br>
-              c. Mengembangkan kelembagaan perekonomian desa.
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Peningkatan kualitas moral & spiritual masyarakat</td>
-            <td>
-              a. Meningkatkan kegiatan keagamaan & sosial kemasyarakatan.<br>
-              b. Mengembangkan minat & bakat masyarakat dalam bidang olahraga & kesenian.<br>
-              c. Menyediakan sarana dan prasarana kegiatan sosial, olahraga, dan budaya.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-  </main>
-</body>
-</html>
+  <!-- Peta Desa -->
+  <section id="peta-desa">
+    <h2>Peta Desa</h2>
+    <p>Berikut adalah lokasi Desa Suka Maju yang dapat diakses melalui Google Maps:</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127628.21372039563!2d122.9822032!3d-5.4670664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98b2f1a3d3adbd%3A0x87b2b3a2cbfbcb7e!2sButon%2C%20Sulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1696855943719"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+</section>

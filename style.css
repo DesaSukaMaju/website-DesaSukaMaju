@@ -124,6 +124,27 @@ footer {
     border-top: 1px solid #eee;
 }
 
+/* Efek animasi muncul halus dengan sedikit blur */
+body {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(20px);
+    animation: fadeInBlur 1s ease-out forwards;
+}
+
+@keyframes fadeInBlur {
+    0% {
+        opacity: 0;
+        filter: blur(8px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
 
 
 

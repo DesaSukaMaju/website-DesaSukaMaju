@@ -3,95 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Desa — Desa Suka Maju</title>
+    <title>Profil Desa Suka Maju</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Tambahan gaya khusus halaman profil */
-        main {
-            max-width: 1000px;
-            margin: 120px auto 60px;
-            padding: 0 20px;
-        }
-
-        section {
-            margin-bottom: 60px;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        section h2 {
-            color: #2a8bfc;
-            margin-bottom: 15px;
-            font-size: 24px;
-        }
-
-        section p, section ul {
-            color: #444;
-            line-height: 1.7;
-        }
-
-        section ul {
-            margin-left: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        table td {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
-
-        table td:first-child {
-            font-weight: bold;
-            width: 40%;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo-desa.png" alt="Logo Desa" class="logo-img">
-            <h1>Desa Suka Maju</h1>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="active">Profil</a>
-                <ul class="dropdown-content">
-                    <li><a href="#visi-misi">Visi Misi Desa</a></li>
-                    <li><a href="#sejarah">Sejarah Desa</a></li>
-                    <li><a href="#data-singkat">Data Singkat Desa</a></li>
-                    <li><a href="#geografis">Kondisi Geografis</a></li>
-                </ul>
-            </li>
-            <li><a href="data.html">Data Desa</a></li>
-            <li><a href="pemerintahan.html">Pemerintahan</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="profil.html" class="active">Profil</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#visi-misi">Visi Misi Desa</a></li>
+                        <li><a href="#sejarah">Sejarah Desa</a></li>
+                        <li><a href="#data-singkat">Data Singkat Desa</a></li>
+                        <li><a href="#geografis">Kondisi Geografis</a></li>
+                    </ul>
+                </li>
+                <li><a href="datadesa.html">Data Desa</a></li>
+                <li><a href="pemerintahan.html">Pemerintahan</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Konten Profil -->
-    <main>
-        <section id="visi-misi">
-            <h2>Visi & Misi Desa</h2>
-            <p><strong>Visi:</strong> Menjadi desa yang mandiri, berdaya saing, dan sejahtera.</p>
-            <p><strong>Misi:</strong></p>
+    <!-- Isi Profil Desa -->
+    <main class="profil-container">
+
+        <!-- Visi Misi -->
+        <section id="visi-misi" class="profil-section">
+            <h2>Visi dan Misi Desa</h2>
+            <h3>Visi:</h3>
+            <p><em>“Mewujudkan Desa Suka Maju yang mandiri, sejahtera, dan berdaya saing.”</em></p>
+            
+            <h3>Misi:</h3>
             <ul>
                 <li>Meningkatkan kesejahteraan masyarakat melalui penguatan pertanian.</li>
                 <li>Mengembangkan UMKM lokal dan produk unggulan desa.</li>
@@ -99,73 +46,38 @@
             </ul>
         </section>
 
-        <section id="sejarah">
+        <!-- Sejarah -->
+        <section id="sejarah" class="profil-section">
             <h2>Sejarah Desa</h2>
-            <p>Desa Suka Maju berdiri pada tahun <strong>1985</strong>. 
-            Awalnya didirikan oleh <strong>Toko La Ode Dama</strong> dengan semangat gotong royong masyarakat. 
-            Seiring waktu, desa ini berkembang pesat dalam sektor pertanian dan pendidikan, 
-            menjadikannya salah satu desa yang maju di wilayah ini.</p>
+            <p>Desa Suka Maju berdiri pada tahun <strong>1985</strong>. Awalnya didirikan oleh <strong>Toko La Ode Dama</strong> dengan semangat gotong royong masyarakat.</p>
+            <p>Seiring waktu, desa ini berkembang pesat dalam sektor pertanian dan pendidikan, menjadikannya salah satu desa yang maju di wilayah ini.</p>
         </section>
 
-        <section id="data-singkat">
+        <!-- Data Singkat -->
+        <section id="data-singkat" class="profil-section">
             <h2>Data Singkat Desa</h2>
-            <table>
-                <tr>
-                    <td>Kode Pos</td>
-                    <td>93761</td>
-                </tr>
-                <tr>
-                    <td>Luas Wilayah</td>
-                    <td>2.150 Ha</td>
-                </tr>
-                <tr>
-                    <td>Nama Dusun</td>
-                    <td>Dusun A, Dusun B, Dusun C, Dusun D</td>
-                </tr>
-                <tr>
-                    <td>Jumlah RT</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>Pendiri Desa</td>
-                    <td>Toko La Ode Dama</td>
-                </tr>
-                <tr>
-                    <td>Mata Pencaharian</td>
-                    <td>Pertanian (Mayoritas)</td>
-                </tr>
-                <tr>
-                    <td>Jumlah Penduduk</td>
-                    <td>2.540 Jiwa</td>
-                </tr>
-            </table>
+            <ul>
+                <li><strong>Luas Wilayah:</strong> 1.200 Ha</li>
+                <li><strong>Jumlah Penduduk:</strong> 2.350 Jiwa</li>
+                <li><strong>Jumlah Kepala Keluarga:</strong> 680 KK</li>
+                <li><strong>Kecamatan:</strong> Wolowa</li>
+                <li><strong>Kabupaten:</strong> Buton</li>
+                <li><strong>Provinsi:</strong> Sulawesi Tenggara</li>
+            </ul>
         </section>
 
-        <section id="geografis">
+        <!-- Kondisi Geografis -->
+        <section id="geografis" class="profil-section">
             <h2>Kondisi Geografis</h2>
-            <p>Desa Suka Maju terletak di dataran rendah, berbatasan dengan Desa Sejahtera di sebelah utara, 
-            Desa Makmur di selatan, dan memiliki sungai kecil yang mengalir di bagian barat. 
-            Wilayah ini memiliki areal persawahan yang luas dan tanah yang subur untuk pertanian.</p>
+            <p>Desa Suka Maju memiliki kondisi geografis berupa dataran tinggi dengan sebagian besar wilayah digunakan untuk lahan pertanian. Iklim tropis dengan curah hujan sedang mendukung kegiatan pertanian padi dan palawija.</p>
         </section>
 
-        <footer>
-            © 2025 Desa Suka Maju
-        </footer>
     </main>
 
-    <!-- Animasi muncul saat scroll -->
-    <script>
-        const sections = document.querySelectorAll("section");
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Desa Suka Maju | Kecamatan Wolowa | Kabupaten Buton | Provinsi Sulawesi Tenggara</p>
+    </footer>
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                }
-            });
-        }, { threshold: 0.2 });
-
-        sections.forEach(section => observer.observe(section));
-    </script>
 </body>
 </html>

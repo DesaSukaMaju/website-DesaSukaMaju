@@ -1,0 +1,171 @@
+/* potensi.css
+   Tema: Hijau lembut sama dengan pemerintahan
+*/
+
+/* ========== Reset & Umum ========== */
+* { box-sizing: border-box; }
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f6fdf8; /* background hijau lembut */
+  color: #213228;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== Navbar/Header ========== */
+header {
+  background-color: #2e7d32; /* hijau tua untuk header */
+  color: #fff;
+  padding: 14px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.4px;
+}
+
+.brand .sub {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Navbar links */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 14px;
+  font-weight: 500;
+}
+nav a:hover { text-decoration: underline; opacity: 0.95; }
+nav a.active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* ========== Hero ========== */
+.hero {
+  width: 92%;
+  margin: 28px auto 10px auto;
+  text-align: center;
+  padding: 28px 20px;
+  background: linear-gradient(180deg, rgba(233,245,235,0.9), rgba(244,253,246,0.8));
+  border-radius: 10px;
+  border: 1px solid #d9f0dc;
+}
+.hero h2 {
+  color: #2e7d32;
+  margin: 0 0 6px 0;
+  font-size: 1.9rem;
+}
+.hero .lead {
+  margin: 0;
+  color: #356a39;
+  font-size: 1rem;
+}
+
+/* ========== Grid Cards ========== */
+.grid {
+  width: 92%;
+  margin: 22px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e1f1e6;
+  box-shadow: 0 6px 18px rgba(34,60,40,0.04);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card-head {
+  background: linear-gradient(90deg, #dff5e1, #e8f8ea);
+  padding: 14px 18px;
+  border-bottom: 1px solid #cfead4;
+}
+.card-head h3 {
+  margin: 0;
+  color: #1b5e20;
+  font-size: 1.15rem;
+}
+.card-body {
+  padding: 16px 18px 22px 18px;
+  color: #2d3f34;
+  line-height: 1.6;
+}
+.card-body p { margin: 0 0 8px 0; }
+.card-body ul { margin: 8px 0 0 18px; }
+
+/* ========== Ringkasan ========== */
+.konten.ringkasan {
+  width: 92%;
+  margin: 12px auto 24px auto;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 6px solid #81c784;
+  box-shadow: 0 4px 12px rgba(33,50,34,0.04);
+}
+.two-col {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.two-col > div {
+  flex: 1 1 250px;
+}
+.konten.ringkasan h4 {
+  margin: 0 0 8px 0;
+  color: #1b5e20;
+}
+
+/* ========== CTA ========== */
+.konten.cta {
+  width: 92%;
+  margin: 18px auto 36px auto;
+  background: linear-gradient(180deg,#eaf8ee, #ffffff);
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid #d9f0dc;
+}
+.konten.cta a { color: #1b5e20; font-weight: 700; text-decoration: none; }
+.konten.cta a:hover { text-decoration: underline; }
+
+/* ========== Footer ========== */
+footer {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 14px 0;
+  margin-top: 28px;
+}
+.footer-inner {
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* ========== Responsive tweaks ========== */
+@media (max-width: 600px) {
+  .navbar { flex-direction: column; gap: 10px; align-items: flex-start; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero h2 { font-size: 1.4rem; }
+  .card-head h3 { font-size: 1rem; }
+}

@@ -1,0 +1,103 @@
+/* galeri.css - Tema hijau lembut (sama dengan pemerintahan & potensi) */
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f6fdf8;
+  color: #213228;
+}
+
+/* HEADER */
+header {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 14px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.navbar {
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand h1 { margin: 0; font-size: 1.6rem; }
+.brand .sub { margin: 0; font-size: 0.85rem; opacity: 0.9; }
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 14px;
+  font-weight: 500;
+}
+nav a:hover { text-decoration: underline; opacity: 0.95; }
+nav a.active { text-decoration: underline; font-weight: 700; }
+
+/* HERO */
+.hero {
+  text-align: center;
+  background: linear-gradient(180deg, rgba(233,245,235,0.9), rgba(244,253,246,0.8));
+  border-radius: 10px;
+  border: 1px solid #d9f0dc;
+  width: 92%;
+  margin: 30px auto;
+  padding: 30px 20px;
+}
+.hero h2 { color: #2e7d32; margin-bottom: 6px; font-size: 1.9rem; }
+.hero .lead { color: #356a39; font-size: 1rem; }
+
+/* GALLERY */
+.gallery {
+  width: 92%;
+  margin: 0 auto 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.gallery-item {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e1f1e6;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(34,60,40,0.05);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-item p {
+  margin: 8px 0 12px 0;
+  color: #1b5e20;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(34,60,40,0.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 14px 0;
+}
+.footer-inner {
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .navbar { flex-direction: column; gap: 10px; align-items: flex-start; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero h2 { font-size: 1.4rem; }
+}

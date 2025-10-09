@@ -99,3 +99,39 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
+/* ===== BAGAN STRUKTUR PEMERINTAHAN ===== */
+.bagan {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.kotak {
+  background-color: #dff5e1; /* hijau pastel */
+  border: 2px solid #81c784;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  margin: 10px auto;
+  font-weight: 500;
+  color: #1b5e20;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.kepala-desa {
+  background-color: #aed581; /* hijau lebih terang */
+  color: #1a410d;
+  font-weight: 600;
+}
+
+.bawahan-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.bawahan {
+  margin-top: 15px;
+}

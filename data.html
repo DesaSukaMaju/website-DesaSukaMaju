@@ -4,21 +4,61 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Data Desa — Desa Suka Maju</title>
-  <link rel="stylesheet" href="data-style.css">
+  <link rel="stylesheet" href="potensi.css">
+  <style>
+    /* Tambahan styling khusus untuk tabel data */
+    main {
+      width: 92%;
+      margin: 30px auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(34,60,40,0.04);
+      padding: 24px;
+      border: 1px solid #e1f1e6;
+    }
+    main h2 {
+      color: #1b5e20;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    section {
+      margin-bottom: 28px;
+    }
+    section h3 {
+      color: #2e7d32;
+      border-left: 5px solid #81c784;
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+    }
+    table.data-table td {
+      border: 1px solid #d9f0dc;
+      padding: 10px 14px;
+      vertical-align: top;
+    }
+    table.data-table tr:nth-child(even) {
+      background: #f6fdf8;
+    }
+    table.data-table tr:hover {
+      background: #eaf8ee;
+    }
+  </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="images/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'"/>
-        <div>
-          <h1>Desa Suka Maju</h1>
-          <p class="subtitle">Data Desa</p>
-        </div>
-      </div>
 
-      <nav class="main-nav">
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+      <div class="brand">
+        <h1>Desa Suka Maju</h1>
+        <p class="sub">Data Desa</p>
+      </div>
+      <nav>
         <a href="index.html">Beranda</a>
         <a href="profil.html">Profil Desa</a>
         <a href="pemerintahan.html">Pemerintahan</a>
@@ -31,10 +71,9 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="container page">
+  <main>
     <h2>Data Desa Suka Maju</h2>
 
-    <!-- DATA UMUM DESA -->
     <section>
       <h3>Data Umum Desa</h3>
       <table class="data-table">
@@ -49,7 +88,6 @@
       </table>
     </section>
 
-    <!-- DATA PENDUDUK -->
     <section>
       <h3>Data Penduduk</h3>
       <table class="data-table">
@@ -60,7 +98,6 @@
       </table>
     </section>
 
-    <!-- MATA PENCAHARIAN -->
     <section>
       <h3>Mata Pencaharian Penduduk</h3>
       <table class="data-table">
@@ -70,7 +107,6 @@
       </table>
     </section>
 
-    <!-- KONDISI DEMOGRAFI -->
     <section>
       <h3>Kondisi Demografi</h3>
       <p>
@@ -86,12 +122,11 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
+  <footer>
+    <div class="footer-inner">
       <p>© 2025 Desa Suka Maju | Kecamatan Wolowa | Kabupaten Buton | Provinsi Sulawesi Tenggara</p>
     </div>
   </footer>
+
 </body>
 </html>
-
-

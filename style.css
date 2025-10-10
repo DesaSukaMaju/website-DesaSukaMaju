@@ -1,181 +1,172 @@
-/* Reset */
+/* ===== Reset ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Navbar */
+/* ===== Navbar ===== */
 .navbar {
-    background-color: rgba(255,255,255,0.96);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 60px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #2e8b57; /* hijau tua seperti di Potensi Desa */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .judul-desa h1 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #222;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .judul-desa p {
-    font-size: 13px;
-    color: #666;
+  font-size: 13px;
+  color: #e0f2e9;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: color 0.3s, border-bottom 0.3s;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 .navbar ul li a:hover,
 .navbar ul li a.active {
-    color: #2a8bfc;
-    border-bottom: 3px solid #2a8bfc;
-    padding-bottom: 3px;
+  color: #c4f0d2;
+  border-bottom: 3px solid #c4f0d2;
+  padding-bottom: 3px;
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 .hero {
-    height: 100vh;
-    background-image: url("WhatsApp Image 2025-10-05 at 19.24.54.jpeg"); /* Ganti sesuai nama file gambarmu */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  height: 100vh;
+  background-image: url("WhatsApp Image 2025-10-05 at 19.24.54.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
-    position: relative;
-    color: white;
-    z-index: 2;
-    max-width: 800px;
-    padding: 20px;
-}
-
-.hero-content h1, 
-.hero-content h2, 
-.hero-content p {
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  position: relative;
+  color: white;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
 }
 
 .hero-content h2 {
-    font-size: 26px;
-    font-weight: 600;
-    margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content h1 {
-    font-size: 40px; /* dikurangi biar proporsional */
-    font-weight: 700;
-    margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* ===== GALERI SECTION ===== */
+/* ===== Galeri Section ===== */
 .galeri {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 40px 20px;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .galeri h2 {
-    color: #2a8bfc;
-    font-size: 1.9em;
-    margin-bottom: 10px;
+  color: #2e8b57;
+  font-size: 1.9em;
+  margin-bottom: 10px;
 }
 
 .galeri p {
-    margin-bottom: 30px;
-    color: #555;
+  margin-bottom: 30px;
+  color: #444;
 }
 
 .galeri-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
 }
 
 .foto {
-    background: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .foto img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }
 
 .foto p {
-    background: #2a8bfc;
-    color: white;
-    margin: 0;
-    padding: 10px;
-    font-size: 0.95em;
+  background: #2e8b57;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  font-size: 0.95em;
 }
 
 .foto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsif Galeri */
-@media (max-width: 768px) {
-    .foto img {
-        height: 160px;
-    }
-}
-
-/* ===== FOOTER ===== */
+/* ===== Footer ===== */
 footer {
-    background: #2a8bfc;
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 14px;
-    margin-top: 60px;
+  background: #1e6d43;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  margin-top: 60px;
 }
 
+/* ===== Data Table (jika digunakan di beranda) ===== */
 .data-table {
   width: 100%;
   border-collapse: collapse;
@@ -195,7 +186,32 @@ footer {
 .data-table td:first-child {
   font-weight: 600;
   width: 45%;
-  background: #f1f6ff;
-  color: #2a8bfc;
+  background: #eaf7ec;
+  color: #1e6d43;
 }
 
+/* ===== Responsif ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .foto img {
+    height: 160px;
+  }
+}

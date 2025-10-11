@@ -1,46 +1,95 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desa Suka Maju</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - Desa Suka Maju</title>
+  <link rel="stylesheet" href="index-style.css" />
 </head>
 <body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="brand">
+        <h1>Desa Suka Maju</h1>
+        <p class="sub">Kecamatan Wolowa, Kabupaten Buton</p>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Beranda</a>
+        <a href="profil.html">Profil Desa</a>
+        <a href="pemerintahan.html">Pemerintahan</a>
+        <a href="data-desa.html">Data Desa</a>
+        <a href="potensi.html">Potensi</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="judul-desa">
-            <h1>Desa Suka Maju</h1>
-            <p>Kecamatan Wolowa, Kabupaten Buton, Sulawesi Tenggara</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="profil.html">Profil Desa</a></li>
-                <li><a href="data.html">Data Desa</a></li>
-                <li><a href="pemerintahan.html">Pemerintahan</a></li>
-                <li><a href="potensi.html">Potensi</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Selamat Datang di Website Resmi</h2>
+    <h1>Desa Suka Maju</h1>
+    <p class="lead">
+      Media informasi resmi yang menampilkan profil, potensi, serta kegiatan masyarakat Desa Suka Maju.
+    </p>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h2>Selamat Datang</h2>
-            <h1>Website Resmi Desa Suka Maju</h1>
-            <p>Media informasi dan publikasi kegiatan masyarakat serta potensi Desa Suka Maju.</p>
+  <!-- Konten Utama -->
+  <main>
+    <section class="grid">
+      <article class="card">
+        <div class="card-head"><h3>Profil Desa</h3></div>
+        <div class="card-body">
+          <p>Pelajari sejarah, visi-misi, dan letak geografis Desa Suka Maju yang menjadi identitas utama desa.</p>
+          <a href="profil.html" class="btn">Lihat Selengkapnya</a>
         </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Pemerintahan Desa</h3></div>
+        <div class="card-body">
+          <p>Kenali struktur dan perangkat desa yang berperan dalam pelayanan serta pembangunan masyarakat.</p>
+          <a href="pemerintahan.html" class="btn">Lihat Selengkapnya</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Potensi Desa</h3></div>
+        <div class="card-body">
+          <p>Eksplor potensi pertanian, wisata, dan produk unggulan yang menjadi kebanggaan warga Desa Suka Maju.</p>
+          <a href="potensi.html" class="btn">Lihat Selengkapnya</a>
+        </div>
+      </article>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Desa Suka Maju | Kecamatan Wolowa | Kabupaten Buton | Provinsi Sulawesi Tenggara</p>
-    </footer>
+    <!-- Ringkasan -->
+    <section class="konten ringkasan">
+      <h3>Tentang Desa Suka Maju</h3>
+      <div class="two-col">
+        <div>
+          <h4>Letak & Luas Wilayah</h4>
+          <p>Desa Suka Maju terletak di Kecamatan Wolowa, Kabupaten Buton, dengan luas wilayah ±3,2 km² yang terdiri dari beberapa dusun dan area pertanian.</p>
+        </div>
+        <div>
+          <h4>Jumlah Penduduk</h4>
+          <p>Memiliki sekitar <strong>1.245 jiwa</strong> dengan mayoritas penduduk berprofesi sebagai petani dan pelaku UMKM lokal.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- CTA -->
+    <section class="konten cta">
+      <h3>Ikuti Perkembangan Desa</h3>
+      <p>Kunjungi halaman <a href="galeri.html">Galeri</a> dan <a href="kontak.html">Kontak</a> untuk mengetahui kegiatan terbaru dan informasi layanan masyarakat.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2025 Desa Suka Maju — Semua hak dilindungi</p>
+    </div>
+  </footer>
 </body>
 </html>

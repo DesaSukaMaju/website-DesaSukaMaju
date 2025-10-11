@@ -1,255 +1,91 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profil Desa Suka Maju</title>
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      margin: 0;
-      background-color: #f5fdf7;
-      color: #333;
-      line-height: 1.7;
-    }
-
-    /* ===== NAVBAR ===== */
-    nav {
-      background-color: #2e8b57;
-      padding: 15px 0;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-    }
-
-    nav a:hover,
-    nav a.active {
-      text-decoration: underline;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      background-color: #eaf7ec;
-      padding: 25px;
-      text-align: center;
-      color: #1e6d43;
-      border-bottom: 3px solid #2e8b57;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    /* ===== KONTEN PROFIL ===== */
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    section.box {
-      background-color: #ffffff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 35px;
-    }
-
-    h2 {
-      color: #2e8b57;
-      border-left: 6px solid #1e6d43;
-      padding-left: 10px;
-      margin-bottom: 15px;
-    }
-
-    h3 {
-      color: #1e6d43;
-      margin-top: 25px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      text-align: justify;
-      margin-bottom: 10px;
-    }
-
-    ol {
-      margin-left: 25px;
-      margin-top: 10px;
-    }
-
-    /* ===== TABEL ===== */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px 12px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #eaf7ec;
-      color: #1e6d43;
-      width: 35%;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    /* ===== PETA ===== */
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media screen and (max-width: 768px) {
-      nav a {
-        display: block;
-        margin: 8px 0;
-      }
-
-      .container {
-        padding: 10px;
-      }
-
-      section.box {
-        padding: 18px;
-      }
-
-      table, tr, th, td {
-        display: block;
-        width: 100%;
-      }
-
-      th {
-        background-color: transparent;
-        border: none;
-        font-weight: bold;
-        color: #2e8b57;
-      }
-
-      td {
-        border: none;
-        border-bottom: 1px solid #ddd;
-        padding-left: 5px;
-      }
-
-      iframe {
-        height: 300px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Desa - Desa Suka Maju</title>
+  <link rel="stylesheet" href="profil-style.css">
 </head>
 <body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav>
-    <a href="index.html">Beranda</a>
-    <a href="profil.html" class="active">Profil Desa</a>
-    <a href="pemerintahan.html">Pemerintahan</a>
-    <a href="datadesa.html">Data Desa</a>
-    <a href="potensi.html">Potensi</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="kontak.html">Kontak</a>
-  </nav>
-
-  <!-- ===== HEADER ===== -->
+  <!-- ====== HEADER / NAVBAR ====== -->
   <header>
-    <h1>Profil Desa Suka Maju</h1>
-    <p>Menampilkan sejarah, visi misi, dan kondisi wilayah Desa Suka Maju.</p>
+    <div class="navbar">
+      <div class="brand">
+        <h1>Desa Suka Maju</h1>
+        <p class="sub">Kabupaten Kutai Kartanegara</p>
+      </div>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html" class="active">Profil Desa</a>
+        <a href="pemerintahan.html">Pemerintahan</a>
+        <a href="data-desa.html">Data Desa</a>
+        <a href="potensi.html">Potensi</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== KONTEN PROFIL ===== -->
-  <div class="container">
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Profil Desa Suka Maju</h2>
+      <p>Mengenal lebih dekat sejarah, visi, dan kehidupan masyarakat desa kami.</p>
+    </div>
+  </section>
 
-    <section id="visi-misi" class="box">
-      <h2>Visi dan Misi Desa</h2>
-      <h3>Visi</h3>
-      <p><strong>"Mewujudkan masyarakat Suka Maju yang mandiri, sehat, berbudaya, sejahtera, adil, dan beradab."</strong></p>
-
-      <h3>Misi</h3>
-      <ol>
-        <li>Meningkatkan ketersediaan infrastruktur desa dan pelayanan masyarakat.</li>
-        <li>Menciptakan tata kelola pemerintahan yang bersih dan transparan.</li>
-        <li>Meningkatkan kualitas sumber daya manusia.</li>
-        <li>Meningkatkan pemenuhan kebutuhan masyarakat baik materiil maupun spiritual.</li>
-      </ol>
-    </section>
-
-    <section id="sejarah" class="box">
-      <h2>Sejarah Singkat Desa</h2>
+  <!-- ====== KONTEN PROFIL ====== -->
+  <main>
+    <section class="sejarah">
+      <h3>Sejarah Singkat Desa</h3>
       <p>
-        Suka Maju merupakan perkampungan yang berasal dari bentukan Dinas Transmigrasi pada tahun 2002 dan masih merupakan Dusun Suka Maju dari Desa Wolowa Baru.
-        Pada tahun 2007 Dusun Suka Maju definitif menjadi desa dalam pemerintahan Kabupaten Buton Kecamatan Wolowa.
-        Setelah definitif terbentuk menjadi 3 dusun: Laranta, Toko, dan Kone.
+        Desa Suka Maju berdiri pada tahun 1985 sebagai hasil pemekaran wilayah dari desa induk.
+        Awalnya, wilayah ini merupakan area pertanian kecil yang berkembang pesat berkat gotong royong masyarakat.
+        Kini, Desa Suka Maju dikenal sebagai salah satu desa produktif di bidang pertanian dan UMKM.
       </p>
     </section>
 
-    <section id="geografis" class="box">
-      <h2>Kondisi Geografis Desa</h2>
-      <p>
-        Desa Suka Maju terletak kurang lebih 30 KM dari Ibu Kota Kabupaten Buton atau 8 KM dari Ibu Kota Kecamatan Wolowa.
-        Desa ini sebagian besar dihuni oleh suku Cia-Cia dan suku lainnya yang telah lama menetap.
-      </p>
-
-      <h3>Batas-batas Desa Suka Maju</h3>
-      <table>
-        <tr><th>Sebelah Utara</th><td>Kecamatan Kapontori</td></tr>
-        <tr><th>Sebelah Selatan</th><td>Desa Wolowa Baru</td></tr>
-        <tr><th>Sebelah Barat</th><td>Desa Matawia</td></tr>
-        <tr><th>Sebelah Timur</th><td>Sungai Kalata</td></tr>
-      </table>
-
-      <h3>Luas Wilayah Desa</h3>
-      <p>Luas wilayah Desa Suka Maju adalah 520 Ha yang terdiri dari:</p>
-      <table>
-        <tr><th>Lahan Pemukiman</th><td>20 Ha</td></tr>
-        <tr><th>Lahan Perkebunan/Pertanian</th><td>250 Ha</td></tr>
-        <tr><th>Kawasan Perkantoran Desa</th><td>3 Ha</td></tr>
-        <tr><th>Kawasan Hutan Lindung</th><td>240 Ha</td></tr>
-        <tr><th>Kawasan Pekuburan</th><td>3 Ha</td></tr>
-        <tr><th>Lain-lain</th><td>14 Ha</td></tr>
-      </table>
+    <section class="visi-misi">
+      <div class="visi">
+        <h3>Visi</h3>
+        <p>“Mewujudkan Desa Suka Maju yang mandiri, maju, dan sejahtera berbasis gotong royong dan teknologi.”</p>
+      </div>
+      <div class="misi">
+        <h3>Misi</h3>
+        <ul>
+          <li>Meningkatkan kualitas sumber daya manusia melalui pendidikan dan pelatihan.</li>
+          <li>Mendorong pertumbuhan ekonomi desa berbasis pertanian dan UMKM.</li>
+          <li>Menjaga kelestarian lingkungan dan budaya lokal.</li>
+          <li>Memanfaatkan teknologi informasi dalam tata kelola pemerintahan desa.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="data-singkat" class="box">
-      <h2>Data Singkat Desa</h2>
-      <table>
-        <tr><th>Nama Desa</th><td>Desa Suka Maju</td></tr>
-        <tr><th>Kecamatan</th><td>Wolowa</td></tr>
-        <tr><th>Kabupaten</th><td>Buton</td></tr>
-        <tr><th>Provinsi</th><td>Sulawesi Tenggara</td></tr>
-        <tr><th>Luas Wilayah</th><td>520 Hektar</td></tr>
-        <tr><th>Jumlah Penduduk</th><td>474 Jiwa</td></tr>
-        <tr><th>Jumlah Kepala Keluarga</th><td>100 KK</td></tr>
-      </table>
+    <section class="kondisi">
+      <h3>Kondisi Umum Wilayah</h3>
+      <div class="grid-info">
+        <div class="box">
+          <h4>Luas Wilayah</h4>
+          <p>± 3,2 km², terdiri atas lahan pertanian, pemukiman, dan area konservasi.</p>
+        </div>
+        <div class="box">
+          <h4>Jumlah Penduduk</h4>
+          <p>1.245 jiwa (data tahun 2024) dengan 320 kepala keluarga.</p>
+        </div>
+        <div class="box">
+          <h4>Letak Geografis</h4>
+          <p>Berada di dataran rendah dengan akses jalan kabupaten, berjarak 20 km dari ibu kota kecamatan.</p>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <section id="peta-desa" class="box">
-      <h2>Peta Desa</h2>
-      <p>Berikut adalah lokasi Desa Suka Maju, Kecamatan Wolowa, Kabupaten Buton, Sulawesi Tenggara:</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.34182892873!2d122.8768389!3d-5.3802306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98c24e8d3f9a29%3A0x7d8b3c9b70a4f14f!2sSuka%20Maju%2C%20Wolowa%2C%20Kabupaten%20Buton%2C%20Sulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1728471202909!5m2!1sid!2sid"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
-
-  </div>
-
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2025 Desa Suka Maju — Semua hak dilindungi</p>
+    </div>
+  </footer>
 </body>
 </html>

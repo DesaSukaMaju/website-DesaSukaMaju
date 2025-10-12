@@ -1,160 +1,107 @@
-/* === DATA DESA STYLE  === */
+/* data-desa.css */
+/* Warna dan gaya mengikuti potensi.css agar seirama */
 
-/* RESET & DASAR */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background-color: #f6fdf8; /* hijau lembut seperti potensi.css */
+  background-color: #f6fdf8;
   color: #213228;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ===== HEADER/NAVBAR ===== */
-.site-header {
-  background-color: #2e7d32; /* hijau tua */
-  color: #ffffff;
+/* HEADER */
+header {
+  background-color: #2e7d32;
+  color: #fff;
   padding: 14px 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.header-inner {
+.navbar {
   width: 92%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+.brand h1 { margin: 0; font-size: 1.6rem; }
+.brand .sub { margin: 0; font-size: 0.85rem; opacity: 0.9; }
 
-.brand h1 {
-  margin: 0;
-  font-size: 1.6rem;
-  letter-spacing: 0.4px;
-}
-
-.subtitle {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #c8f5d0;
-  opacity: 0.9;
-}
-
-.main-nav a {
-  color: #ffffff;
+nav a {
+  color: #fff;
   text-decoration: none;
   margin-left: 14px;
   font-weight: 500;
-  transition: 0.3s;
 }
-.main-nav a:hover {
-  text-decoration: underline;
-  opacity: 0.95;
-}
-.main-nav a.active {
-  text-decoration: underline;
-  font-weight: 700;
-}
+nav a:hover { text-decoration: underline; }
+nav a.active { text-decoration: underline; font-weight: 700; }
 
-/* ===== KONTEN UTAMA ===== */
-.page {
+/* HERO */
+.hero {
   width: 92%;
-  margin: 40px auto 50px auto;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(34, 60, 40, 0.04);
-  padding: 40px 28px;
-}
-
-.page h2 {
+  margin: 28px auto;
+  background: linear-gradient(180deg, #e9f5eb, #f4fdf6);
+  border-radius: 10px;
+  padding: 28px;
   text-align: center;
-  color: #2e7d32;
-  font-size: 1.9rem;
-  margin-bottom: 30px;
 }
+.hero h2 { color: #2e7d32; margin-bottom: 8px; }
+.hero .lead { color: #356a39; }
 
-.page h3 {
-  color: #1b5e20;
+/* KONTEN DATA */
+.konten.data {
+  width: 92%;
+  background: #fff;
+  margin: 16px auto;
+  padding: 18px;
+  border-radius: 10px;
   border-left: 6px solid #81c784;
-  padding-left: 10px;
-  margin: 30px 0 15px 0;
-  font-size: 1.3rem;
+  box-shadow: 0 4px 12px rgba(33,50,34,0.05);
 }
-
-/* ===== TABEL DATA ===== */
-.data-table {
+.konten.data h3 {
+  margin-top: 0;
+  color: #1b5e20;
+}
+.konten.data table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 25px;
-  background: #ffffff;
+  margin-top: 10px;
+}
+.konten.data th, .konten.data td {
   border: 1px solid #d9f0dc;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(33, 50, 34, 0.05);
+  padding: 8px 12px;
+  text-align: left;
 }
-
-.data-table td {
-  padding: 12px 16px;
-  border-bottom: 1px solid #e1f1e6;
-  font-size: 0.95rem;
-}
-
-.data-table tr:nth-child(even) {
-  background: #f6fdf8;
-}
-
-.data-table td:first-child {
-  font-weight: 600;
+.konten.data th {
+  background: #dff5e1;
   color: #1b5e20;
-  width: 40%;
 }
 
-/* ===== PARAGRAF ===== */
-.page p {
-  color: #2d3f34;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-/* ===== FOOTER ===== */
-.site-footer {
-  background-color: #2e7d32;
-  color: #ffffff;
-  padding: 14px 0;
+/* GRAFIK PLACEHOLDER */
+.grafik-placeholder {
+  background: #dff5e1;
+  border: 2px dashed #81c784;
+  border-radius: 10px;
+  padding: 40px;
   text-align: center;
-  font-size: 0.95rem;
-  opacity: 0.95;
+  color: #1b5e20;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
   margin-top: 28px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
-  .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .page {
-    padding: 24px 16px;
-  }
-  .page h2 {
-    font-size: 1.5rem;
-  }
+  .navbar { flex-direction: column; gap: 10px; align-items: flex-start; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero h2 { font-size: 1.4rem; }
 }

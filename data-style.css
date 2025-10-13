@@ -1,107 +1,128 @@
-/* data-desa.css */
-/* Warna dan gaya mengikuti potensi.css agar seirama */
+/* ===== DATA DESA STYLE ===== */
 
-* { box-sizing: border-box; }
-
+/* Reset dan dasar */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
   background-color: #f6fdf8;
   color: #213228;
+  line-height: 1.6;
 }
 
-/* HEADER */
+/* ===== Navbar ===== */
 header {
   background-color: #2e7d32;
-  color: #fff;
+  color: white;
   padding: 14px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 .navbar {
   width: 92%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
-
-.brand h1 { margin: 0; font-size: 1.6rem; }
-.brand .sub { margin: 0; font-size: 0.85rem; opacity: 0.9; }
-
+.brand h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.brand .sub {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   margin-left: 14px;
   font-weight: 500;
 }
 nav a:hover { text-decoration: underline; }
-nav a.active { text-decoration: underline; font-weight: 700; }
+nav a.active {
+  text-decoration: underline;
+  font-weight: 700;
+}
 
-/* HERO */
+/* ===== Hero ===== */
 .hero {
   width: 92%;
   margin: 28px auto;
-  background: linear-gradient(180deg, #e9f5eb, #f4fdf6);
-  border-radius: 10px;
-  padding: 28px;
   text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(180deg, rgba(233,245,235,0.9), rgba(244,253,246,0.8));
+  border-radius: 10px;
+  border: 1px solid #d9f0dc;
 }
-.hero h2 { color: #2e7d32; margin-bottom: 8px; }
-.hero .lead { color: #356a39; }
+.hero h2 {
+  color: #2e7d32;
+  font-size: 1.9rem;
+}
+.hero .lead {
+  color: #356a39;
+  font-size: 1rem;
+}
 
-/* KONTEN DATA */
+/* ===== Konten Data ===== */
 .konten.data {
   width: 92%;
-  background: #fff;
-  margin: 16px auto;
-  padding: 18px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 18px 24px;
   border-radius: 10px;
   border-left: 6px solid #81c784;
   box-shadow: 0 4px 12px rgba(33,50,34,0.05);
 }
 .konten.data h3 {
-  margin-top: 0;
   color: #1b5e20;
+  margin-bottom: 12px;
 }
+
+/* Tabel */
 .konten.data table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
-.konten.data th, .konten.data td {
-  border: 1px solid #d9f0dc;
-  padding: 8px 12px;
-  text-align: left;
-}
 .konten.data th {
-  background: #dff5e1;
+  text-align: left;
+  background: #eaf8ee;
   color: #1b5e20;
+  padding: 10px;
+  width: 35%;
+}
+.konten.data td {
+  padding: 10px;
+  border-bottom: 1px solid #e1f1e6;
 }
 
-/* GRAFIK PLACEHOLDER */
+/* List */
+.konten.data ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #2d3f34;
+}
+
+/* ===== Grafik Placeholder ===== */
 .grafik-placeholder {
-  background: #dff5e1;
-  border: 2px dashed #81c784;
-  border-radius: 10px;
+  background: #f0faf3;
+  border: 1px dashed #81c784;
   padding: 40px;
   text-align: center;
-  color: #1b5e20;
-  font-weight: 600;
+  border-radius: 8px;
+  color: #356a39;
+  font-style: italic;
 }
 
-/* FOOTER */
+/* ===== Footer ===== */
 footer {
   background-color: #2e7d32;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 14px 0;
-  margin-top: 28px;
+  margin-top: 40px;
 }
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .navbar { flex-direction: column; gap: 10px; align-items: flex-start; }
-  nav { display: flex; flex-wrap: wrap; gap: 8px; }
-  .hero h2 { font-size: 1.4rem; }
+.footer-inner {
+  width: 92%;
+  margin: 0 auto;
+  font-size: 0.95rem;
 }

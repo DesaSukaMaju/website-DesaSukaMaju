@@ -5,9 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Desa - Desa Suka Maju</title>
   <link rel="stylesheet" href="profil-style.css">
+  <style>
+    /* ====== Tambahan gaya untuk tabel ====== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    th, td {
+      border: 1px solid #e1f1e6;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #2e7d32;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f6fdf8;
+    }
+  </style>
 </head>
 <body>
-  <!-- ====== HEADER / NAVBAR ====== -->
+  <!-- ====== HEADER ====== -->
   <header>
     <div class="navbar">
       <div class="brand">
@@ -26,7 +50,7 @@
     </div>
   </header>
 
-  <!-- ====== HERO SECTION ====== -->
+  <!-- ====== HERO ====== -->
   <section class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
@@ -35,7 +59,7 @@
     </div>
   </section>
 
-  <!-- ====== KONTEN PROFIL ====== -->
+  <!-- ====== KONTEN ====== -->
   <main>
     <!-- Sejarah Desa -->
     <section class="sejarah">
@@ -47,6 +71,70 @@
         Dusun Kone, dan Dusun Toko. Dalam perjalanan pemerintahan desa, kepemimpinan telah berganti dari
         La Mbawu (2007–2015), Bosman (2016–2019), hingga La Heru (2018–2024).
       </p>
+
+      <!-- Tabel Sejarah Pemerintahan -->
+      <h4 style="margin-top: 20px; color:#2e7d32;">Sejarah Pemerintahan Desa</h4>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Nama Kepala Desa</th>
+          <th>Periode</th>
+          <th>Keterangan</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>La Mbawu</td>
+          <td>2007 – 2015</td>
+          <td>Kepala desa pertama setelah pemekaran</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bosman</td>
+          <td>2016 – 2019</td>
+          <td>Melanjutkan pembangunan dasar desa</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>La Heru</td>
+          <td>2018 – 2024</td>
+          <td>Menata sistem pemerintahan dan infrastruktur</td>
+        </tr>
+      </table>
+
+      <!-- Tabel Sejarah Pembangunan -->
+      <h4 style="margin-top: 25px; color:#2e7d32;">Sejarah Pembangunan Desa</h4>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Tahun</th>
+          <th>Kegiatan Pembangunan</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2007</td>
+          <td>Pendirian kantor desa dan jalan penghubung utama</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2010</td>
+          <td>Pembangunan sekolah dasar dan sarana air bersih</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>2015</td>
+          <td>Perbaikan fasilitas ibadah dan balai pertemuan</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>2018</td>
+          <td>Peningkatan infrastruktur jalan dan sistem administrasi desa</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>2022</td>
+          <td>Pembangunan taman desa dan peningkatan pelayanan publik</td>
+        </tr>
+      </table>
     </section>
 
     <!-- Visi & Misi -->

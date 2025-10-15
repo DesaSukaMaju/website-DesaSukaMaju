@@ -38,7 +38,13 @@
         <h1>Desa Suka Maju</h1>
         <p class="sub">Kecamatan Wolowa, Kabupaten Buton, Sulawesi Tenggara</p>
       </div>
-      <nav>
+
+      <!-- ====== HAMBURGER MENU ====== -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <nav id="nav-menu">
         <a href="index.html">Beranda</a>
         <a href="profil.html" class="active">Profil Desa</a>
         <a href="pemerintahan.html">Pemerintahan</a>
@@ -209,5 +215,15 @@
       <p>© 2025 Desa Suka Maju — Kecamatan Wolowa, Kabupaten Buton, Sulawesi Tenggara</p>
     </div>
   </footer>
+
+  <!-- ====== JAVASCRIPT MENU ====== -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

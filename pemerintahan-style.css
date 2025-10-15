@@ -1,4 +1,4 @@
-/* ===== Gaya utama dengan warna hijau lembut ===== */
+/* Gaya utama dengan warna hijau lembut */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* ===== HEADER DAN NAVIGASI ===== */
+/* Header dan navigasi */
 header {
   background-color: #3d8b5a;
   color: white;
@@ -19,7 +19,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .navbar h1 {
@@ -27,16 +26,10 @@ header {
   font-size: 1.6em;
 }
 
-.navbar nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .navbar nav a {
   color: white;
   text-decoration: none;
-  margin: 5px 10px;
+  margin: 0 12px;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -46,7 +39,7 @@ header {
   text-decoration: underline;
 }
 
-/* ===== JUDUL HALAMAN ===== */
+/* Judul Halaman */
 .judul {
   background-color: #e8f5e9;
   text-align: center;
@@ -59,7 +52,7 @@ header {
   font-size: 1.8em;
 }
 
-/* ===== KONTEN UTAMA ===== */
+/* Konten utama */
 .konten {
   width: 85%;
   margin: 30px auto;
@@ -81,7 +74,9 @@ table {
   margin-top: 15px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #bdbdbd;
 }
 
@@ -99,14 +94,22 @@ ul {
   margin-top: 10px;
 }
 
-/* ===== BAGAN STRUKTUR ===== */
+footer {
+  background-color: #3d8b5a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== BAGAN STRUKTUR PEMERINTAHAN ===== */
 .bagan {
   text-align: center;
   margin-top: 40px;
 }
 
 .kotak {
-  background-color: #dff5e1;
+  background-color: #dff5e1; /* hijau pastel */
   border: 2px solid #81c784;
   border-radius: 10px;
   padding: 15px;
@@ -114,11 +117,11 @@ ul {
   margin: 10px auto;
   font-weight: 500;
   color: #1b5e20;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .kepala-desa {
-  background-color: #aed581;
+  background-color: #aed581; /* hijau lebih terang */
   color: #1a410d;
   font-weight: 600;
 }
@@ -133,39 +136,4 @@ ul {
 
 .bawahan {
   margin-top: 15px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background-color: #3d8b5a;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-
-/* ===== RESPONSIF ===== */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navbar nav a {
-    margin: 5px;
-    display: inline-block;
-  }
-
-  .kotak {
-    width: 90%;
-  }
-
-  table, th, td {
-    font-size: 14px;
-  }
-
-  .konten {
-    width: 90%;
-    padding: 15px;
-  }
 }

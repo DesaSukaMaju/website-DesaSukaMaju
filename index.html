@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beranda - Desa Suka Maju</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- ====== HEADER / NAVBAR ====== -->
@@ -14,7 +14,13 @@
         <h1>Desa Suka Maju</h1>
         <p class="sub">Kecamatan Wolowa, Kabupaten Buton, Sulawesi Tenggara</p>
       </div>
-      <nav>
+
+      <!-- Tombol menu untuk tampilan HP -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <nav id="nav-menu">
         <a href="index.html" class="active">Beranda</a>
         <a href="profil.html">Profil Desa</a>
         <a href="pemerintahan.html">Pemerintahan</a>
@@ -39,9 +45,7 @@
   <main>
     <section class="intro">
       <h3>Tentang Desa Kami</h3>
-      <p>
-        Desa Suka Maju adalah desa yang masyarakatnya mayoritas petani.
-      </p>
+      <p>Desa Suka Maju adalah desa yang masyarakatnya mayoritas petani.</p>
     </section>
 
     <section class="highlight">
@@ -62,7 +66,15 @@
       <p>© 2025 Desa Suka Maju — Semua hak dilindungi</p>
     </div>
   </footer>
+
+  <script>
+    // ====== JS Navbar Responsif ======
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-menu");
+
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
-
-

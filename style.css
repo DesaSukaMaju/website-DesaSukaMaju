@@ -131,3 +131,48 @@ footer {
   .hero-content h2 { font-size: 1.6rem; }
   .hero-content p { font-size: 0.95rem; }
 }
+
+/* ====== Tambahan: Navbar Responsif ====== */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Saat di layar kecil */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #388e3c;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #4caf50;
+    margin-left: 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+}
+

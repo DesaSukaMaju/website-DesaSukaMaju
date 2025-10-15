@@ -1,34 +1,28 @@
-/* profil-style.css */
-/* Versi laporan desa – mempertahankan tema hijau lembut dan navbar asli */
-
-/* ====== Reset & Umum ====== */
+/* ====== GAYA DASAR ====== */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f6fdf8;
-  color: #213228;
-  line-height: 1.8;
+  background-color: #f4f8f5;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* ====== Navbar ====== */
+/* ====== NAVBAR ====== */
 header {
   background-color: #2e7d32;
-  color: #fff;
-  padding: 14px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: white;
+  padding: 15px 25px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navbar {
-  width: 92%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,207 +30,33 @@ header {
 }
 
 .brand h1 {
-  margin: 0;
   font-size: 1.6rem;
+  margin-bottom: 3px;
 }
 
 .brand .sub {
   font-size: 0.85rem;
-  opacity: 0.9;
+  color: #c8e6c9;
 }
 
+/* ====== NAV MENU ====== */
 nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  margin-left: 14px;
   font-weight: 500;
-  transition: 0.3s;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
+nav a:hover,
 nav a.active {
-  text-decoration: underline;
-  font-weight: 700;
-}
-
-/* ====== Hero Section ====== */
-.hero {
-  position: relative;
-  height: 55vh;
-  background: url('gambar-profil.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-}
-
-.hero .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 20px;
-}
-
-.hero-content h2 {
-  font-size: 2.3rem;
-  margin-bottom: 8px;
-}
-
-.hero-content p {
-  font-size: 1rem;
-}
-
-/* ====== Konten Utama ====== */
-main {
-  width: 88%;
-  margin: 50px auto;
-  text-align: justify;
-  overflow-x: hidden;
-}
-
-/* Judul Bagian */
-main h3 {
-  color: #2e7d32;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #66bb6a;
-  display: inline-block;
-  padding-bottom: 4px;
-  text-transform: uppercase;
-}
-
-/* ====== Sejarah ====== */
-.sejarah {
-  background: #fff;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(33,50,34,0.04);
-  margin-bottom: 40px;
-}
-
-.sejarah p {
-  margin-bottom: 14px;
-}
-
-/* ====== Tabel Scroll Responsif ====== */
-.sejarah table,
-.kondisi table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-th, td {
-  border: 1px solid #e1f1e6;
-  padding: 10px 12px;
-  text-align: left;
-}
-
-/* ====== Visi & Misi ====== */
-.visi-misi {
-  background: #fff;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(33,50,34,0.04);
-  margin-bottom: 40px;
-}
-
-.visi h3,
-.misi h3 {
-  color: #2e7d32;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.visi p {
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.misi ul {
-  list-style-type: decimal;
-  padding-left: 22px;
-}
-
-.misi li {
-  margin-bottom: 10px;
-}
-
-/* ====== Kondisi Umum ====== */
-.kondisi {
-  background: #fff;
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(33,50,34,0.04);
-  margin-bottom: 40px;
-}
-
-.kondisi th,
-.kondisi td {
-  border: 1.5px solid #66bb6a;
-  padding: 10px 14px;
-  text-align: left;
-}
-
-.kondisi th {
-  background-color: #e9f7ec;
-  color: #1b5e20;
-}
-
-/* ====== Footer ====== */
-footer {
-  background-color: #2e7d32;
-  color: #fff;
-  text-align: center;
-  padding: 14px 0;
-  margin-top: 50px;
-}
-
-/* ====== Responsive ====== */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-  }
-
-  nav {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav a {
-    margin: 4px 0;
-  }
-
-  .brand h1 {
-    font-size: 1.3rem;
-  }
-
-  .hero-content h2 {
-    font-size: 1.6rem;
-  }
-
-  main {
-    width: 94%;
-  }
+  background-color: #1b5e20;
 }
 
 /* ====== HAMBURGER MENU (RESPONSIF) ====== */
@@ -245,9 +65,140 @@ footer {
   font-size: 1.8rem;
   cursor: pointer;
   color: white;
+  margin-left: auto; /* tombol di kanan */
 }
 
+/* ====== HERO SECTION ====== */
+.hero {
+  position: relative;
+  height: 280px;
+  background: url('gambar/profil.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: #e8f5e9;
+}
+
+/* ====== KONTEN ====== */
+main {
+  padding: 30px 8%;
+  background: #f4f8f5;
+}
+
+h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 35px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ====== TABEL ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+th, td {
+  border: 1px solid #81c784;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #2e7d32;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f6fdf8;
+}
+
+/* ====== VISI MISI ====== */
+.visi-misi {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.visi, .misi {
+  flex: 1;
+  background: #f9fff9;
+  padding: 15px;
+  border-left: 5px solid #2e7d32;
+  border-radius: 8px;
+}
+
+/* ====== GRID KONDISI ====== */
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.grid-info .box {
+  background: #f9fff9;
+  border-left: 5px solid #2e7d32;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 4px solid #1b5e20;
+}
+
+/* ====== RESPONSIF UNTUK HP ====== */
 @media (max-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
   nav {
     display: none;
     width: 100%;
@@ -259,44 +210,7 @@ footer {
   }
 
   nav a {
-    padding: 8px 16px;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav.show {
-    display: flex;
-  }
-}
-
-/* Pastikan hamburger hanya muncul di layar kecil */
-.menu-toggle {
-  display: none;
-}
-
-/* Hanya tampil di layar kecil (maksimum 768px) */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    display: none;
-    width: 100%;
-    background-color: #2e7d32;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-    padding: 10px 0;
-  }
-
-  nav a {
-    padding: 8px 16px;
+    padding: 10px 16px;
     display: block;
     width: 100%;
     text-align: left;
@@ -305,5 +219,12 @@ footer {
   nav.show {
     display: flex;
   }
-}
 
+  .hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,4 +1,4 @@
-/* Gaya utama dengan warna hijau lembut */
+/* ===== Gaya utama dengan warna hijau lembut ===== */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Header dan navigasi */
+/* ===== HEADER DAN NAVIGASI ===== */
 header {
   background-color: #3d8b5a;
   color: white;
@@ -19,6 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar h1 {
@@ -26,10 +27,16 @@ header {
   font-size: 1.6em;
 }
 
+.navbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .navbar nav a {
   color: white;
   text-decoration: none;
-  margin: 0 12px;
+  margin: 5px 10px;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -39,7 +46,7 @@ header {
   text-decoration: underline;
 }
 
-/* Judul Halaman */
+/* ===== JUDUL HALAMAN ===== */
 .judul {
   background-color: #e8f5e9;
   text-align: center;
@@ -52,7 +59,7 @@ header {
   font-size: 1.8em;
 }
 
-/* Konten utama */
+/* ===== KONTEN UTAMA ===== */
 .konten {
   width: 85%;
   margin: 30px auto;
@@ -92,22 +99,14 @@ ul {
   margin-top: 10px;
 }
 
-footer {
-  background-color: #3d8b5a;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-
-/* ===== BAGAN STRUKTUR PEMERINTAHAN ===== */
+/* ===== BAGAN STRUKTUR ===== */
 .bagan {
   text-align: center;
   margin-top: 40px;
 }
 
 .kotak {
-  background-color: #dff5e1; /* hijau pastel */
+  background-color: #dff5e1;
   border: 2px solid #81c784;
   border-radius: 10px;
   padding: 15px;
@@ -119,7 +118,7 @@ footer {
 }
 
 .kepala-desa {
-  background-color: #aed581; /* hijau lebih terang */
+  background-color: #aed581;
   color: #1a410d;
   font-weight: 600;
 }
@@ -134,4 +133,39 @@ footer {
 
 .bawahan {
   margin-top: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #3d8b5a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIF ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar nav a {
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .kotak {
+    width: 90%;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  .konten {
+    width: 90%;
+    padding: 15px;
+  }
 }

@@ -1,10 +1,9 @@
 /* =====================================================
-   data-style.css 
-   Tema: hijau lembut seperti potensi.css
-   Khusus untuk halaman Data Desa
+   data-style.css (Versi Fix dengan Hamburger Menu)
+   Tema: hijau lembut — konsisten dengan halaman lain
 ===================================================== */
 
-/* ========== Reset & Umum ========== */
+/* ===== Reset & Umum ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,12 +17,15 @@ body {
   line-height: 1.6;
 }
 
-/* ========== Header & Navbar ========== */
+/* ===== Header & Navbar ===== */
 header {
   background-color: #2e7d32;
   color: #ffffff;
   padding: 14px 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .container {
@@ -36,8 +38,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
+/* ===== Brand ===== */
 .brand {
   display: flex;
   align-items: center;
@@ -61,26 +65,43 @@ header {
   height: auto;
 }
 
-/* ========== Navbar Links ========== */
-nav a {
+/* ===== Navbar Links ===== */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.main-nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 14px;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
-nav a:hover {
+.main-nav a:hover {
   text-decoration: underline;
   opacity: 0.95;
 }
 
-nav a.active {
+.main-nav a.active {
   text-decoration: underline;
   font-weight: 700;
 }
 
-/* ========== Halaman Utama ========== */
+/* ===== Tombol Hamburger ===== */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+/* ===== Konten Halaman ===== */
 .page {
   background: #ffffff;
   margin: 30px auto;
@@ -95,7 +116,7 @@ nav a.active {
   margin-bottom: 25px;
 }
 
-/* ========== Tabel Data ========== */
+/* ===== Tabel Data ===== */
 section {
   margin-bottom: 30px;
 }
@@ -129,7 +150,7 @@ section h3 {
   background-color: #ecf7ef;
 }
 
-/* ========== Footer ========== */
+/* ===== Footer ===== */
 footer {
   background-color: #2e7d32;
   color: #ffffff;
@@ -140,25 +161,52 @@ footer {
   opacity: 0.95;
 }
 
-/* ========== Responsive ========== */
-@media (max-width: 600px) {
-  .header-inner {
+/* ===== Responsive (Mobile) ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
+    background-color: #2e7d32;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
     gap: 10px;
+    z-index: 99;
   }
 
-  nav {
+  .main-nav a {
+    padding: 10px 20px;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+
+  .main-nav.show {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
   }
 
+  .header-inner {
+    flex-direction: row;
+  }
+}
+
+/* ===== Tampilan di HP Kecil ===== */
+@media (max-width: 600px) {
   .page {
     padding: 20px;
   }
 
   .page h2 {
     font-size: 1.3rem;
+  }
+
+  section h3 {
+    font-size: 1rem;
   }
 }

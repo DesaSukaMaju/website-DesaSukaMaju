@@ -10,10 +10,9 @@ body {
   background-color: #f4f8f5;
   color: #333;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
-/* ====== HEADER & NAVBAR ====== */
+/* ====== NAVBAR ====== */
 header {
   background-color: #2e7d32;
   color: white;
@@ -27,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .brand h1 {
@@ -43,9 +42,7 @@ header {
 /* ====== NAV MENU ====== */
 nav {
   display: flex;
-  align-items: center;
   gap: 15px;
-  transition: all 0.3s ease-in-out;
 }
 
 nav a {
@@ -62,13 +59,13 @@ nav a.active {
   background-color: #1b5e20;
 }
 
-/* ====== HAMBURGER MENU ====== */
+/* ====== HAMBURGER MENU (RESPONSIF) ====== */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
   color: white;
-  margin-left: auto;
+  margin-left: auto; /* tombol di kanan */
 }
 
 /* ====== HERO SECTION ====== */
@@ -80,7 +77,6 @@ nav a.active {
   align-items: center;
   justify-content: center;
   color: white;
-  overflow: hidden;
 }
 
 .hero .overlay {
@@ -108,14 +104,13 @@ nav a.active {
 
 /* ====== KONTEN ====== */
 main {
-  padding: 40px 8%;
+  padding: 30px 8%;
   background: #f4f8f5;
 }
 
 h3 {
   color: #2e7d32;
   margin-bottom: 10px;
-  font-size: 1.4rem;
 }
 
 section {
@@ -124,35 +119,6 @@ section {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-/* ====== VISI MISI ====== */
-.visi-misi {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.visi, .misi {
-  flex: 1;
-  background: #f9fff9;
-  padding: 15px;
-  border-left: 5px solid #2e7d32;
-  border-radius: 8px;
-}
-
-/* ====== GRID INFORMASI ====== */
-.grid-info {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.grid-info .box {
-  background: #f9fff9;
-  border-left: 5px solid #2e7d32;
-  padding: 15px;
-  border-radius: 8px;
 }
 
 /* ====== TABEL ====== */
@@ -181,6 +147,35 @@ tr:nth-child(even) {
   background-color: #f6fdf8;
 }
 
+/* ====== VISI MISI ====== */
+.visi-misi {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.visi, .misi {
+  flex: 1;
+  background: #f9fff9;
+  padding: 15px;
+  border-left: 5px solid #2e7d32;
+  border-radius: 8px;
+}
+
+/* ====== GRID KONDISI ====== */
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.grid-info .box {
+  background: #f9fff9;
+  border-left: 5px solid #2e7d32;
+  padding: 15px;
+  border-radius: 8px;
+}
+
 /* ====== FOOTER ====== */
 footer {
   background-color: #2e7d32;
@@ -192,10 +187,16 @@ footer {
   border-top: 4px solid #1b5e20;
 }
 
-/* ====== RESPONSIF ====== */
+/* ====== RESPONSIF UNTUK HP ====== */
 @media (max-width: 768px) {
+  .navbar {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   .menu-toggle {
     display: block;
+    margin-left: auto;
   }
 
   nav {
@@ -203,25 +204,20 @@ footer {
     width: 100%;
     background-color: #2e7d32;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     margin-top: 10px;
     padding: 10px 0;
   }
 
-  nav.show {
-    display: flex;
-  }
-
   nav a {
+    padding: 10px 16px;
     display: block;
     width: 100%;
     text-align: left;
-    padding: 12px 18px;
-    border-radius: 0;
   }
 
-  .hero {
-    height: 220px;
+  nav.show {
+    display: flex;
   }
 
   .hero-content h2 {

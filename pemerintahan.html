@@ -10,7 +10,11 @@
   <header>
     <div class="navbar">
       <h1>Desa Suka Maju</h1>
-      <nav>
+
+      <!-- Tombol Hamburger -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <nav id="nav-menu">
         <a href="index.html">Beranda</a>
         <a href="profil.html">Profil Desa</a>
         <a href="pemerintahan.html" class="active">Pemerintahan</a>
@@ -52,7 +56,7 @@
         <div class="bawahan-row">
           <div class="kotak">Tata Usaha<br><strong>Sadlin Faisal</strong></div>
           <div class="kotak">Kasi Pemerintahan<br><strong>Ernawati</strong></div>
-          <div class="kotak">Kasi pelayanan<br><strong>Wa Riama</strong></div>
+          <div class="kotak">Kasi Pelayanan<br><strong>Wa Riama</strong></div>
           <div class="kotak">Kepala Dusun Laranta<br><strong>Ismail Maora</strong></div>
           <div class="kotak">Kepala Dusun Kone<br><strong>Asnia</strong></div>
           <div class="kotak">Kepala Dusun Toko<br><strong>Rahmat</strong></div>
@@ -84,5 +88,14 @@
   <footer>
     <p>&copy; 2025 Desa Suka Maju</p>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>

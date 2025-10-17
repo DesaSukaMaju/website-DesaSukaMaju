@@ -11,6 +11,9 @@ header {
   background-color: #3d8b5a;
   color: white;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar {
@@ -24,6 +27,21 @@ header {
 .navbar h1 {
   margin: 0;
   font-size: 1.6em;
+}
+
+/* Tombol Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: white;
+}
+
+/* Menu navigasi */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
 }
 
 .navbar nav a {
@@ -74,9 +92,7 @@ table {
   margin-top: 15px;
 }
 
-table,
-th,
-td {
+table, th, td {
   border: 1px solid #bdbdbd;
 }
 
@@ -94,6 +110,7 @@ ul {
   margin-top: 10px;
 }
 
+/* Footer */
 footer {
   background-color: #3d8b5a;
   color: white;
@@ -109,7 +126,7 @@ footer {
 }
 
 .kotak {
-  background-color: #dff5e1; /* hijau pastel */
+  background-color: #dff5e1;
   border: 2px solid #81c784;
   border-radius: 10px;
   padding: 15px;
@@ -121,7 +138,7 @@ footer {
 }
 
 .kepala-desa {
-  background-color: #aed581; /* hijau lebih terang */
+  background-color: #aed581;
   color: #1a410d;
   font-weight: 600;
 }
@@ -136,4 +153,37 @@ footer {
 
 .bawahan {
   margin-top: 15px;
+}
+
+/* ===== RESPONSIVE NAVBAR ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #3d8b5a;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  nav.show {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    display: block;
+    text-align: left;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 }

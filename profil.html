@@ -3,24 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Desa Suka Maju</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Profil Desa - Desa Suka Maju</title>
+  <link rel="stylesheet" href="profil-style.css">
+  <style>
+    /* ====== Tambahan gaya untuk tabel ====== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    th, td {
+      border: 1px solid #e1f1e6;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #2e7d32;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f6fdf8;
+    }
+  </style>
 </head>
 <body>
-
   <!-- ====== HEADER ====== -->
   <header>
     <div class="navbar">
-      <!-- Brand -->
       <div class="brand">
         <h1>Desa Suka Maju</h1>
         <p class="sub">Kecamatan Wolowa, Kabupaten Buton, Sulawesi Tenggara</p>
       </div>
 
-      <!-- Tombol Hamburger -->
-      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <!-- ====== HAMBURGER MENU ====== -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
 
-      <!-- Navigasi -->
       <nav id="nav-menu">
         <a href="index.html">Beranda</a>
         <a href="profil.html" class="active">Profil Desa</a>
@@ -33,109 +56,167 @@
     </div>
   </header>
 
-  <!-- ====== HERO SECTION ====== -->
+  <!-- ====== HERO ====== -->
   <section class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
       <h2>Profil Desa Suka Maju</h2>
-      <p>Mengenal lebih dekat Desa Suka Maju, tempat harmoni dan kemajuan berpadu.</p>
+      <p>Sejarah, visi misi, dan kondisi geografis Desa Suka Maju</p>
     </div>
   </section>
 
-  <!-- ====== MAIN CONTENT ====== -->
+  <!-- ====== KONTEN ====== -->
   <main>
-    <!-- Tentang Desa -->
-    <section>
-      <h3>Tentang Desa</h3>
+    <!-- Sejarah Desa -->
+    <section class="sejarah">
+      <h3>Sejarah Desa</h3>
       <p>
-        Desa Suka Maju merupakan salah satu desa di Kecamatan Wolowa, Kabupaten Buton, Provinsi Sulawesi Tenggara. 
-        Desa ini dikenal dengan masyarakatnya yang ramah, lingkungan yang asri, serta potensi pertanian dan peternakan yang melimpah.
+        Desa Suka Maju merupakan hasil program transmigrasi pada tahun 2002 dan awalnya merupakan dusun dari Desa Wolowa Baru.
+        Pada tahun 2007, wilayah ini resmi menjadi desa definitif di Kecamatan Wolowa, Kabupaten Buton. Setelah itu, Desa Suka Maju
+        terbagi menjadi tiga dusun, yaitu Dusun Laranta, Dusun Kone, dan Dusun Toko. Dalam perjalanan pemerintahan desa,
+        kepemimpinan telah berganti dari La Mbawu (2007–2015), Bosman (2016–2019), hingga La Heru (2018–2024).
       </p>
-    </section>
 
-    <!-- Visi dan Misi -->
-    <section>
-      <h3>Visi dan Misi</h3>
-      <div class="visi-misi">
-        <div class="visi">
-          <h4>Visi</h4>
-          <p>
-            “Mewujudkan Desa Suka Maju yang mandiri, sejahtera, dan berdaya saing melalui pembangunan yang berkelanjutan.”
-          </p>
-        </div>
-        <div class="misi">
-          <h4>Misi</h4>
-          <ul>
-            <li>Meningkatkan kesejahteraan masyarakat melalui pengembangan ekonomi lokal.</li>
-            <li>Mendorong pendidikan dan kesehatan masyarakat desa.</li>
-            <li>Memanfaatkan potensi sumber daya alam secara berkelanjutan.</li>
-            <li>Meningkatkan pelayanan publik yang transparan dan partisipatif.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kondisi Umum -->
-    <section>
-      <h3>Kondisi Umum</h3>
-      <div class="grid-info">
-        <div class="box">
-          <h4>Letak Geografis</h4>
-          <p>Desa ini terletak di bagian selatan Kecamatan Wolowa, dengan luas wilayah sekitar 450 hektar.</p>
-        </div>
-        <div class="box">
-          <h4>Jumlah Penduduk</h4>
-          <p>Jumlah penduduk mencapai sekitar 1.250 jiwa dengan mayoritas bermata pencaharian sebagai petani dan nelayan.</p>
-        </div>
-        <div class="box">
-          <h4>Topografi</h4>
-          <p>Wilayah desa didominasi oleh dataran rendah dengan sebagian kecil daerah perbukitan.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Data Umum -->
-    <section>
-      <h3>Data Umum Desa</h3>
+      <!-- Tabel Sejarah Pemerintahan -->
+      <h4 style="margin-top: 20px; color:#2e7d32;">Sejarah Pemerintahan Desa</h4>
       <table>
         <tr>
-          <th>Parameter</th>
+          <th>No</th>
+          <th>Nama Kepala Desa</th>
+          <th>Periode</th>
           <th>Keterangan</th>
         </tr>
         <tr>
-          <td>Luas Wilayah</td>
-          <td>450 Ha</td>
+          <td>1</td>
+          <td>La Mbawu</td>
+          <td>2007 – 2015</td>
+          <td>Kepala desa pertama setelah pemekaran</td>
         </tr>
         <tr>
-          <td>Jumlah Penduduk</td>
-          <td>1.250 Jiwa</td>
+          <td>2</td>
+          <td>Bosman</td>
+          <td>2016 – 2019</td>
+          <td>Melanjutkan pembangunan dasar desa</td>
         </tr>
         <tr>
-          <td>Kepala Desa</td>
-          <td>La Ode Rahman</td>
-        </tr>
-        <tr>
-          <td>Kecamatan</td>
-          <td>Wolowa</td>
-        </tr>
-        <tr>
-          <td>Kabupaten</td>
-          <td>Buton</td>
-        </tr>
-        <tr>
-          <td>Provinsi</td>
-          <td>Sulawesi Tenggara</td>
+          <td>3</td>
+          <td>La Heru</td>
+          <td>2018 – 2024</td>
+          <td>Menata sistem pemerintahan dan infrastruktur</td>
         </tr>
       </table>
+
+      <!-- Tabel Sejarah Pembangunan -->
+      <h4 style="margin-top: 25px; color:#2e7d32;">Sejarah Pembangunan Desa</h4>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Tahun</th>
+          <th>Kegiatan Pembangunan</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2007</td>
+          <td>Pendirian kantor desa dan jalan penghubung utama</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2010</td>
+          <td>Pembangunan sekolah dasar dan sarana air bersih</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>2015</td>
+          <td>Perbaikan fasilitas ibadah dan balai pertemuan</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>2018</td>
+          <td>Peningkatan infrastruktur jalan dan sistem administrasi desa</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>2022</td>
+          <td>Pembangunan taman desa dan peningkatan pelayanan publik</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Visi & Misi -->
+    <section class="visi-misi">
+      <div class="visi">
+        <h3>Visi</h3>
+        <p>“Mewujudkan masyarakat Suka Maju yang mandiri, sehat, berbudaya, sejahtera, adil, dan beradab.”</p>
+      </div>
+      <div class="misi">
+        <h3>Misi</h3>
+        <ul>
+          <li>Meningkatkan ketersediaan infrastruktur desa dan pelayanan masyarakat.</li>
+          <li>Mewujudkan tata kelola pemerintahan yang bersih dan transparan.</li>
+          <li>Meningkatkan kualitas sumber daya manusia.</li>
+          <li>Memenuhi kebutuhan masyarakat baik material maupun spiritual.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Kondisi Geografis -->
+    <section class="kondisi">
+      <h3>Kondisi Geografis Desa</h3>
+      <p>
+        Desa Suka Maju terletak sekitar 30 km dari ibu kota Kabupaten Buton dan ±8 km dari ibu kota Kecamatan Wolowa.
+        Desa ini didiami oleh mayoritas masyarakat suku Cia-Cia dan beberapa suku lain yang telah lama menetap.
+      </p>
+
+      <div class="grid-info">
+        <div class="box">
+          <h4>Batas Wilayah</h4>
+          <p>
+            Utara: Kecamatan Kapontori<br>
+            Selatan: Desa Wolowa Baru<br>
+            Barat: Desa Matawia<br>
+            Timur: Sungai Kalata
+          </p>
+        </div>
+        <div class="box">
+          <h4>Luas dan Penggunaan Lahan</h4>
+          <p>
+            Total luas wilayah ±520 Ha, terdiri dari lahan pemukiman (20 Ha), pertanian/perkebunan (250 Ha),
+            perkantoran (13 Ha), hutan lindung (240 Ha), pekuburan (3 Ha), dan lainnya (14 Ha).
+          </p>
+        </div>
+        <div class="box">
+          <h4>Jumlah Penduduk</h4>
+          <p>
+            Berdasarkan data PKD Desa Suka Maju April 2019, terdapat 111 KK dengan total 481 jiwa,
+            terdiri dari 264 laki-laki dan 217 perempuan yang tersebar di tiga dusun.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="peta">
+      <h3>Lokasi Desa Suka Maju</h3>
+      <p>Berikut lokasi Desa Suka Maju, Kecamatan Wolowa, Kabupaten Buton:</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.3418!2d122.9768389!3d-5.3802306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98c24e8d3f9a29%3A0x7d8b3c9b70a4f14f!2sSuka%20Maju%2C%20Wolowa%2C%20Kabupaten%20Buton%2C%20Sulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1728471202909!5m2!1sid!2sid"
+        width="100%"
+        height="400"
+        style="border: 2px solid #81c784; border-radius:10px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
   </main>
 
   <!-- ====== FOOTER ====== -->
   <footer>
-    <p>&copy; 2025 Desa Suka Maju | Dikembangkan oleh Tim Website Desa</p>
+    <div class="footer-inner">
+      <p>© 2025 Desa Suka Maju — Kecamatan Wolowa, Kabupaten Buton, Sulawesi Tenggara</p>
+    </div>
   </footer>
 
-  <!-- ====== SCRIPT ====== -->
+  <!-- ====== JAVASCRIPT MENU ====== -->
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');

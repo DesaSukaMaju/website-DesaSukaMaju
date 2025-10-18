@@ -141,9 +141,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 92%;
+    margin: 0 auto;
+  }
+
   .menu-toggle {
-    display: block; /* muncul hanya di HP/tablet */
+    display: block;
     color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
 
   nav {
@@ -161,10 +171,5 @@ footer {
   nav a {
     margin: 10px 0;
     text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }

@@ -71,6 +71,7 @@ nav a.active {
 /* ====== HERO SECTION ====== */
 .hero {
   position: relative;
+  width: 100%;
   height: auto;
   background: url('WhatsApp Image 2025-10-14 at 16.40.52.jpeg') center/cover no-repeat;
   display: flex;
@@ -228,5 +229,6 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 
 

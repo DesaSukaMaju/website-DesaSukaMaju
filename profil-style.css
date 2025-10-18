@@ -72,7 +72,7 @@ nav a.active {
 .hero {
   position: relative;
   height: 280px;
-  background: url('gambar/profil.jpg') center/cover no-repeat;
+  background: url('WhatsApp Image 2025-10-14 at 16.40.52.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,3 +228,4 @@ footer {
     font-size: 0.9rem;
   }
 }
+

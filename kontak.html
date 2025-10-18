@@ -14,7 +14,7 @@
         <p class="sub">Kontak Desa</p>
       </div>
 
-      <!-- ✅ Tombol Hamburger -->
+      <!-- Tombol Hamburger -->
       <div class="menu-toggle">☰</div>
 
       <nav>
@@ -78,20 +78,18 @@
     </section>
   </main>
 
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+
   <footer>
     <div class="footer-inner">
       <p>© 2025 Desa Suka Maju — Semua hak dilindungi</p>
     </div>
   </footer>
-
-  <!-- ✅ Script hamburger -->
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
-
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
-    });
-  </script>
 </body>
 </html>

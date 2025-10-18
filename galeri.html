@@ -6,24 +6,38 @@
   <title>Galeri Desa - Desa Suka Maju</title>
   <link rel="stylesheet" href="galeri-style.css">
 </head>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+
 <body>
-  <header>
-    <div class="navbar">
-      <div class="brand">
-        <h1>Desa Suka Maju</h1>
-        <p class="sub">Galeri Desa</p>
-      </div>
-      <nav>
-        <a href="index.html">Beranda</a>
-        <a href="profil.html">Profil Desa</a>
-        <a href="pemerintahan.html">Pemerintahan</a>
-        <a href="data.html">Data Desa</a>
-        <a href="potensi.html">Potensi</a>
-        <a href="galeri.html" class="active">Galeri</a>
-        <a href="kontak.html">Kontak</a>
-      </nav>
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <h1>Desa Suka Maju</h1>
+      <p class="sub">Galeri Desa</p>
     </div>
-  </header>
+
+    <!-- Tombol Hamburger -->
+    <div class="menu-toggle">☰</div>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="profil.html">Profil Desa</a>
+      <a href="pemerintahan.html">Pemerintahan</a>
+      <a href="data.html">Data Desa</a>
+      <a href="potensi.html">Potensi</a>
+      <a href="galeri.html" class="active">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
 
   <main>
     <section class="hero">
@@ -72,5 +86,6 @@
   </footer>
 </body>
 </html>
+
 
 

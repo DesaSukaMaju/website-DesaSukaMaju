@@ -41,7 +41,7 @@ nav a.active { text-decoration: underline; font-weight: 700; }
 .hero {
   position: relative;
   height: 90vh;
-  background: url('WhatsApp Image 2025-10-14 at 16.40.45.jpeg') center/cover no-repeat;
+  background: url('WhatsApp Image 2025-10-19 at 13.26.53.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,5 +175,6 @@ footer {
     display: flex;
   }
 }
+
 
 
